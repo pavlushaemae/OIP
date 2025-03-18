@@ -1,4 +1,3 @@
 # OIP
-Repo for OIP hw's 
-Pidikseev Pavel 11-102
-Gorlov Danil 11-102
+Repo for OIP hw's\n 
+Pidikseev Pavel 11-102\nGorlov Danil 11-102
