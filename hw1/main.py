@@ -22,7 +22,7 @@ for link in soup.select(".mw-category-group a"):
         URLS.append(BASE_WIKI_URL + href)
 
 # Ограничиваем список до 100 ссылок
-URLS = URLS[:1]
+URLS = URLS[:100]
 
 print(f"Найдено {len(URLS)} страниц.")
 
