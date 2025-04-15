@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+
+<html class="client-nojs" dir="ltr" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Задача Региомонтана о максимизации угла — Википедия</title>
+
+
+
+
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+
+
+<noscript></noscript>
+<meta content="MediaWiki 1.44.0-wmf.20" name="generator"/>
+<meta content="origin" name="referrer"/>
+<meta content="origin-when-cross-origin" name="referrer"/>
+<meta content="max-image-preview:standard" name="robots"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="https://upload.wikimedia.org/wikipedia/commons/8/8f/Regiomontanus.problem.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="661" property="og:image:height"/>
+<meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Regiomontanus.problem.png/800px-Regiomontanus.problem.png" property="og:image"/>
+<meta content="800" property="og:image:width"/>
+<meta content="440" property="og:image:height"/>
+<meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Regiomontanus.problem.png/640px-Regiomontanus.problem.png" property="og:image"/>
+<meta content="640" property="og:image:width"/>
+<meta content="352" property="og:image:height"/>
+<meta content="width=1120" name="viewport"/>
+<meta content="Задача Региомонтана о максимизации угла — Википедия" property="og:title"/>
+<meta content="website" property="og:type"/>
+<link href="//upload.wikimedia.org" rel="preconnect"/>
+<link href="//ru.m.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0" media="only screen and (max-width: 640px)" rel="alternate"/>
+<link href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=edit" rel="alternate" title="Править" type="application/x-wiki"/>
+<link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+<link href="/static/favicon/wikipedia.ico" rel="icon"/>
+<link href="/w/rest.php/v1/search" rel="search" title="Википедия (ru)" type="application/opensearchdescription+xml"/>
+<link href="//ru.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0" rel="canonical"/>
+<link href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" rel="license"/>
+<link href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8&amp;feed=atom" rel="alternate" title="Википедия — Atom-лента" type="application/atom+xml"/>
+<link href="//meta.wikimedia.org" rel="dns-prefetch">
+<link href="login.wikimedia.org" rel="dns-prefetch"/>
+</link></head>
+<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Задача_Региомонтана_о_максимизации_угла rootpage-Задача_Региомонтана_о_максимизации_угла skin-vector action-view"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+<a id="top"></a>
+<div id="siteNotice"><!-- CentralNotice --></div>
+<div class="mw-indicators">
+<div class="mw-indicator" id="mw-indicator-0-suggest-link"><div class="mw-parser-output"><b><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Википедия:Изолированные статьи"><span title="Данная статья распознаётся как изолированная">Связать?</span></a></b></div></div>
+</div>
+<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Задача Региомонтана о максимизации угла</span></h1>
+<div class="vector-body" id="bodyContent">
+<div class="noprint" id="siteSub">Материал из Википедии — свободной энциклопедии</div>
+<div id="contentSub"><div id="mw-content-subtitle"><div id="mw-fr-revision-messages"><div class="cdx-message mw-fr-message-box cdx-message--block cdx-message--notice mw-fr-basic mw-fr-draft-not-synced plainlinks noprint"><span class="cdx-message__icon"></span><div class="cdx-message__content">Текущая версия страницы пока <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0_%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/%D0%9F%D0%BE%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BB%D1%8F_%D1%87%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9" title="Википедия:Проверка статей/Пояснение для читателей">не проверялась</a> опытными участниками и может значительно отличаться от <a class="external text" href="https://ru.wikipedia.org/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;stable=1">версии, проверенной 25 марта 2022 года</a>; проверки требуют <a class="external text" href="https://ru.wikipedia.org/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;oldid=120908956&amp;diff=cur&amp;diffonly=0">7 правок</a>.</div></div></div></div></div>
+<div id="contentSub2"></div>
+<div id="jump-to-nav"></div>
+<a class="mw-jump-link" href="#mw-head">Перейти к навигации</a>
+<a class="mw-jump-link" href="#searchInput">Перейти к поиску</a>
+<div class="mw-body-content" id="mw-content-text"><div class="mw-content-ltr mw-parser-output" dir="ltr" lang="ru"><p><b>Задача Региомонтана о максимизации угла</b> — это задача поиска <a href="/wiki/%D0%AD%D0%BA%D1%81%D1%82%D1%80%D0%B5%D0%BC%D1%83%D0%BC" title="Экстремум">экстремума</a><sup class="reference" id="cite_ref-_c0ec93401e05a1a6_1-0"><a href="#cite_note-_c0ec93401e05a1a6-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>, поставленная немецким математиком 15-го века Иоганном Мюллером<sup class="reference" id="cite_ref-_c5e3f7a80d7b168a_2-0"><a href="#cite_note-_c5e3f7a80d7b168a-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup> (известен также как <a href="/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD" title="Региомонтан">Региомонтан</a>). Задача следующая:
+</p>
+<figure class="mw-halign-right" typeof="mw:File/Thumb"><a class="mw-file-description" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Regiomontanus.problem.png"><img class="mw-file-element" data-file-height="463" data-file-width="841" decoding="async" height="303" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Regiomontanus.problem.png/550px-Regiomontanus.problem.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Regiomontanus.problem.png/825px-Regiomontanus.problem.png 1.5x, //upload.wikimedia.org/wikipedia/commons/8/8f/Regiomontanus.problem.png 2x" width="550"/></a><figcaption>Две точки на уровне глаз отражают два возможных положения глаз наблюдателя.</figcaption></figure>
+<dl><dd><i>На стене висит картина, заданы нижний и верхний край картины выше уровня глаз. Насколько далеко нужно стоять от стены, чтобы максимизировать угол, образованный краями картины и глазами наблюдателя?</i></dd></dl>
+<p>Если наблюдатель стоит очень близко к стене или слишком далеко от неё, угол наблюдения маленький. Нужно найти точку где-то между этими крайними позициями, чтобы угол наблюдения был как можно больше.
+</p><p>Тот же подход применим для нахождения оптимального положения для удара по мячу в регби<sup class="reference" id="cite_ref-_afd44d0d45921f27_3-0"><a href="#cite_note-_afd44d0d45921f27-3"><span class="cite-bracket">[</span>3<span class="cite-bracket">]</span></a></sup>. Картина не обязана находиться вертикально — мы можем смотреть через окно падающей Пизанской башни или риэлтор может показывать преимущество естественного освещения наклонной крыши мансарды.
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="ru"><h2 id="mw-toc-heading">Содержание</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Решение_методами_элементарной_геометрии"><span class="tocnumber">1</span> <span class="toctext">Решение методами элементарной геометрии</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Решение_аналитическими_методами"><span class="tocnumber">2</span> <span class="toctext">Решение аналитическими методами</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Решение_алгебраическими_методами"><span class="tocnumber">3</span> <span class="toctext">Решение алгебраическими методами</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Примечания"><span class="tocnumber">4</span> <span class="toctext">Примечания</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Литература"><span class="tocnumber">5</span> <span class="toctext">Литература</span></a></li>
+</ul>
+</div>
+<div class="mw-heading mw-heading2"><h2 id="Решение_методами_элементарной_геометрии"><span id=".D0.A0.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D0.B5_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.B0.D0.BC.D0.B8_.D1.8D.D0.BB.D0.B5.D0.BC.D0.B5.D0.BD.D1.82.D0.B0.D1.80.D0.BD.D0.BE.D0.B9_.D0.B3.D0.B5.D0.BE.D0.BC.D0.B5.D1.82.D1.80.D0.B8.D0.B8"></span>Решение методами элементарной геометрии</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;veaction=edit&amp;section=1" title="Редактировать раздел «Решение методами элементарной геометрии»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=edit&amp;section=1" title="Редактировать код раздела «Решение методами элементарной геометрии»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-halign-right" typeof="mw:File/Thumb"><a class="mw-file-description" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Regiomontanus.solution.png"><img class="mw-file-element" data-file-height="542" data-file-width="812" decoding="async" height="367" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Regiomontanus.solution.png/550px-Regiomontanus.solution.png" srcset="//upload.wikimedia.org/wikipedia/commons/c/c8/Regiomontanus.solution.png 1.5x" width="550"/></a><figcaption></figcaption></figure>
+<p>Существует единственная <a href="/wiki/%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C" title="Окружность">окружность</a>, проходящая через верхнюю и нижнюю кромку картины и касающаяся уровня глаз. Из элементарной геометрии известно, что при движении позиции наблюдателя вдоль окружность <a href="/wiki/%D0%92%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9_%D1%83%D0%B3%D0%BE%D0%BB" title="Вписанный угол">угол</a> осмотра будет оставаться постоянным. Все позиции на уровне глаз, за исключением точки касания окружности, лежат вне окружности, а потому угол обзора будет меньше угла в точке касания.
+</p><p>Согласно Евклиду (<i><a href="/wiki/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%B0_(%D0%95%D0%B2%D0%BA%D0%BB%D0%B8%D0%B4)" title="Начала (Евклид)">Начала</a></i> III.36) или по теореме о <a href="/wiki/%D0%A1%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D1%8C_%D1%82%D0%BE%D1%87%D0%BA%D0%B8_%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE_%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Степень точки относительно окружности">степени точки относительно окружности</a>, расстояние от стены до точки касания является <a href="/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B5_%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5" title="Среднее геометрическое">cредним геометрическим</a> высот верхнего и нижнего краёв картины. Это означает, в свою очередь, что если отразить нижний край картины относительно уровня глаз и нарисовать окружность, в которой верхний край картины и отражённый нижний край служат крайними точками диаметра, окружность пересечёт линию уровня глаз в искомой точке (Начала II.14).
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Решение_аналитическими_методами"><span id=".D0.A0.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B0.D0.BD.D0.B0.D0.BB.D0.B8.D1.82.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.BC.D0.B8_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.B0.D0.BC.D0.B8"></span>Решение аналитическими методами</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;veaction=edit&amp;section=2" title="Редактировать раздел «Решение аналитическими методами»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=edit&amp;section=2" title="Редактировать код раздела «Решение аналитическими методами»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>В наши дни эта задача широко известна, поскольку используется как упражнение во многих учебниках математического анализа для первых курсов (например, книга Стюарта<sup class="reference" id="cite_ref-_c31a30b55889167d_4-0"><a href="#cite_note-_c31a30b55889167d-4"><span class="cite-bracket">[</span>4<span class="cite-bracket">]</span></a></sup>).
+</p><p>Положим
+</p>
+<dl><dd><i>a</i> = высота до нижнего края картины от уровня глаз;</dd>
+<dd><i>b</i> = высота до верхнего края картины от уровня глаз;</dd>
+<dd><i>x</i> = расстояние наблюдателя от стены;</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \alpha }" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>α<!-- α --></mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \alpha }</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \alpha }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b79333175c8b3f0840bfb4ec41b8072c83ea88d3" style="vertical-align: -0.338ex; width:1.488ex; height:1.676ex;"/></span> = угол между горизонтальным уровнем глаз и прямой, соединяющей нижний край картины с глазами наблюдателя;</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \beta }" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>β<!-- β --></mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \beta }</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \beta }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7ed48a5e36207156fb792fa79d29925d2f7901e8" style="vertical-align: -0.671ex; width:1.332ex; height:2.509ex;"/></span> = угол между горизонтальным уровнем глаз и прямой, соединяющей верхний край картины с глазами наблюдателя.</dd></dl>
+<p>Угол, который требуется максимизировать, равен <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \beta -\alpha }" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>β<!-- β --></mi>
+<mo>−<!-- − --></mo>
+<mi>α<!-- α --></mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \beta -\alpha }</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \beta -\alpha }" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/91631b725fdbf7bc91258e42dae90b2a47900c71" style="vertical-align: -0.671ex; width:5.66ex; height:2.509ex;"/></span>. <a href="/wiki/%D0%A2%D1%80%D0%B8%D0%B3%D0%BE%D0%BD%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Тригонометрические функции">Тангенс</a> угла возрастает с увеличением угла, потому достаточно максимизировать
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \tan(\beta -\alpha )={\frac {\tan \beta -\tan \alpha }{1+\tan \beta \tan \alpha }}={\frac {{\frac {b}{x}}-{\frac {a}{x}}}{1+{\frac {b}{x}}\cdot {\frac {a}{x}}}}=(b-a){\frac {x}{x^{2}+ab}}.}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>tan</mi>
+<mo>⁡<!-- ⁡ --></mo>
+<mo stretchy="false">(</mo>
+<mi>β<!-- β --></mi>
+<mo>−<!-- − --></mo>
+<mi>α<!-- α --></mi>
+<mo stretchy="false">)</mo>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<mi>tan</mi>
+<mo>⁡<!-- ⁡ --></mo>
+<mi>β<!-- β --></mi>
+<mo>−<!-- − --></mo>
+<mi>tan</mi>
+<mo>⁡<!-- ⁡ --></mo>
+<mi>α<!-- α --></mi>
+</mrow>
+<mrow>
+<mn>1</mn>
+<mo>+</mo>
+<mi>tan</mi>
+<mo>⁡<!-- ⁡ --></mo>
+<mi>β<!-- β --></mi>
+<mi>tan</mi>
+<mo>⁡<!-- ⁡ --></mo>
+<mi>α<!-- α --></mi>
+</mrow>
+</mfrac>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mi>b</mi>
+<mi>x</mi>
+</mfrac>
+</mrow>
+<mo>−<!-- − --></mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mi>a</mi>
+<mi>x</mi>
+</mfrac>
+</mrow>
+</mrow>
+<mrow>
+<mn>1</mn>
+<mo>+</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mi>b</mi>
+<mi>x</mi>
+</mfrac>
+</mrow>
+<mo>⋅<!-- ⋅ --></mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mi>a</mi>
+<mi>x</mi>
+</mfrac>
+</mrow>
+</mrow>
+</mfrac>
+</mrow>
+<mo>=</mo>
+<mo stretchy="false">(</mo>
+<mi>b</mi>
+<mo>−<!-- − --></mo>
+<mi>a</mi>
+<mo stretchy="false">)</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mi>x</mi>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+<mo>.</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \tan(\beta -\alpha )={\frac {\tan \beta -\tan \alpha }{1+\tan \beta \tan \alpha }}={\frac {{\frac {b}{x}}-{\frac {a}{x}}}{1+{\frac {b}{x}}\cdot {\frac {a}{x}}}}=(b-a){\frac {x}{x^{2}+ab}}.}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \tan(\beta -\alpha )={\frac {\tan \beta -\tan \alpha }{1+\tan \beta \tan \alpha }}={\frac {{\frac {b}{x}}-{\frac {a}{x}}}{1+{\frac {b}{x}}\cdot {\frac {a}{x}}}}=(b-a){\frac {x}{x^{2}+ab}}.}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/baaf0fb86b2ab8306efb1b8f3d587827ec7ed5cf" style="vertical-align: -3.338ex; width:61.546ex; height:7.843ex;"/></span></dd></dl>
+<p>Поскольку <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle b-a}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>b</mi>
+<mo>−<!-- − --></mo>
+<mi>a</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle b-a}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle b-a}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ecca61f9c918fe1deb227ed79d4979d70c443ea4" style="vertical-align: -0.505ex; width:5.068ex; height:2.343ex;"/></span> является положительной константой, нам нужно лишь максимизировать функцию без этой константы. Дифференцируя, получаем
+</p>
+<dl><dd><strong class="error texerror">Невозможно разобрать выражение (SVG (MathML можно включить с помощью плагина для браузера): Недопустимый ответ («Math extension cannot connect to Restbase.») от сервера «http://localhost:6011/ru.wikipedia.org/v1/»:): {\displaystyle  {d \over dx}\left(\frac{x}{x^2 + ab}\right) = \frac{ab - x^2}{(x^2 + ab)^2} \qquad \begin{cases} {} &gt; 0 &amp; \text{если } 0 \leqslant x &lt; \sqrt{ab\,{}}, \\ {} = 0 &amp; \text{если } x = \sqrt{ab\,{}}, \\ {} &lt; 0 &amp; \text{если } x &gt; \sqrt{ab\,{}}. \end{cases} }</strong>
+</dd></dl>
+<p>Таким образом, угол возрастает при увеличении <i>x</i> от 0 до <span class="nowrap"><big>√</big><span style="border-top:1px solid; padding:0.15em 0.3em;"><i>ab</i></span></span> и уменьшается при росте <i>x</i> после <span class="nowrap"><big>√</big><span style="border-top:1px solid; padding:0.15em 0.3em;"><i>ab</i></span></span>. Получаем, что угол максимален, когда <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle x={\sqrt {ab}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>x</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>a</mi>
+<mi>b</mi>
+</msqrt>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle x={\sqrt {ab}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle x={\sqrt {ab}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c83703fa4a17e068d3dc44c78d7b1cd9fdffa714" style="vertical-align: -0.671ex; width:8.591ex; height:3.009ex;"/></span>, то есть равен <a href="/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D0%B5%D0%B5_%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5" title="Среднее геометрическое">среднему геометрическому</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle a}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>a</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle a}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;"/></span> и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle b}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>b</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle b}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;"/></span>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Решение_алгебраическими_методами"><span id=".D0.A0.D0.B5.D1.88.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B0.D0.BB.D0.B3.D0.B5.D0.B1.D1.80.D0.B0.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.BC.D0.B8_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4.D0.B0.D0.BC.D0.B8"></span>Решение алгебраическими методами</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;veaction=edit&amp;section=3" title="Редактировать раздел «Решение алгебраическими методами»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=edit&amp;section=3" title="Редактировать код раздела «Решение алгебраическими методами»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Мы видели, что достаточно максимизировать
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle {\frac {x}{x^{2}+ab}}.}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mi>x</mi>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+</mfrac>
+</mrow>
+<mo>.</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle {\frac {x}{x^{2}+ab}}.}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle {\frac {x}{x^{2}+ab}}.}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/acc5f1936d1dcef6bc506ceaea8bc00604c54e62" style="vertical-align: -2.338ex; width:8.935ex; height:5.176ex;"/></span></dd></dl>
+<p>Это эквивалентно минимизации обратной величины:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle {\frac {x^{2}+ab}{x}}=x+{\frac {ab}{x}}.}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<msup>
+<mi>x</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mrow>
+<mo>=</mo>
+<mi>x</mi>
+<mo>+</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mrow>
+<mo>.</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle {\frac {x^{2}+ab}{x}}=x+{\frac {ab}{x}}.}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle {\frac {x^{2}+ab}{x}}=x+{\frac {ab}{x}}.}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a61e5a9d25d5025b2c907b06b917bf7d3dcbdff" style="vertical-align: -1.838ex; width:19.267ex; height:5.676ex;"/></span></dd></dl>
+<p>Заметим, что последнее выражение равно
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \left({\sqrt {x}}-{\sqrt {\frac {ab}{x}}}\,\right)^{2}+2{\sqrt {ab\,{}}}.}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msup>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+<mo>−<!-- − --></mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</msqrt>
+</mrow>
+<mspace width="thinmathspace"></mspace>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>a</mi>
+<mi>b</mi>
+<mspace width="thinmathspace"></mspace>
+<mrow class="MJX-TeXAtom-ORD">
+</mrow>
+</msqrt>
+</mrow>
+<mo>.</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \left({\sqrt {x}}-{\sqrt {\frac {ab}{x}}}\,\right)^{2}+2{\sqrt {ab\,{}}}.}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \left({\sqrt {x}}-{\sqrt {\frac {ab}{x}}}\,\right)^{2}+2{\sqrt {ab\,{}}}.}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/632becea3add40a375269f5f8589496fd2009b8d" style="vertical-align: -2.505ex; width:25.556ex; height:6.843ex;"/></span></dd></dl>
+<style data-mw-deduplicate="TemplateStyles:r142621938">.mw-parser-output .ts-Скрытый_блок{margin:0;overflow:hidden;border-collapse:collapse;box-sizing:border-box}.mw-parser-output .ts-Скрытый_блок-title{text-align:center;font-weight:bold;line-height:1.6em;min-height:1.2em}.mw-parser-output .ts-Скрытый_блок .mw-collapsible-content{overflow-x:auto;overflow-y:hidden;clear:both}.mw-parser-output .ts-Скрытый_блок::before,.mw-parser-output .ts-Скрытый_блок .mw-collapsible-toggle{padding-top:.1em;width:6em;font-weight:normal;font-size:calc(90%/0.95)}.mw-parser-output .ts-Скрытый_блок-rightHideLink .mw-collapsible-toggle{float:right;text-align:right}.mw-parser-output .ts-Скрытый_блок-leftHideLink .mw-collapsible-toggle{float:left;text-align:left}.mw-parser-output .ts-Скрытый_блок-gray{padding:2px;border:1px solid var(--border-color-base,#a2a9b1)}.mw-parser-output .ts-Скрытый_блок-transparent{border:none}.mw-parser-output .ts-Скрытый_блок-gray .ts-Скрытый_блок-title{background:var(--background-color-neutral,#eaecf0);padding:.1em 6em;padding-right:0}.mw-parser-output .ts-Скрытый_блок-transparent .ts-Скрытый_блок-title{background:transparent;padding:.1em 5.5em;padding-right:0}.mw-parser-output .ts-Скрытый_блок-gray .mw-collapsible-content{padding:.25em 1em}.mw-parser-output .ts-Скрытый_блок-transparent .mw-collapsible-content{padding:.25em 0}.mw-parser-output .ts-Скрытый_блок-gray.ts-Скрытый_блок-rightHideLink .mw-collapsible-toggle{padding-right:1em}.mw-parser-output .ts-Скрытый_блок-transparent.ts-Скрытый_блок-rightHideLink .mw-collapsible-toggle{padding-right:0}.mw-parser-output .ts-Скрытый_блок-gray.ts-Скрытый_блок-leftHideLink .mw-collapsible-toggle{padding-left:1em}.mw-parser-output .ts-Скрытый_блок-transparent.ts-Скрытый_блок-leftHideLink .mw-collapsible-toggle{padding-left:0}.mw-parser-output .ts-Скрытый_блок-gray.ts-Скрытый_блок-rightHideLink .ts-Скрытый_блок-title-leftTitle{padding-left:1em}.mw-parser-output .ts-Скрытый_блок-gray.ts-Скрытый_блок-leftHideLink .ts-Скрытый_блок-title-leftTitle{padding-left:6.5em}.mw-parser-output .ts-Скрытый_блок-gray.ts-Скрытый_блок-leftHideLink .ts-Скрытый_блок-title-rightTitle{padding-right:1em}.mw-parser-output .ts-Скрытый_блок-transparent.ts-Скрытый_блок-rightHideLink .ts-Скрытый_блок-title-rightTitle,.mw-parser-output .ts-Скрытый_блок-transparent.ts-Скрытый_блок-rightHideLink .ts-Скрытый_блок-title-leftTitle{padding-left:0}.mw-parser-output .ts-Скрытый_блок-transparent.ts-Скрытый_блок-leftHideLink .ts-Скрытый_блок-title-rightTitle,.mw-parser-output .ts-Скрытый_блок-transparent.ts-Скрытый_блок-leftHideLink .ts-Скрытый_блок-title-leftTitle{padding-right:0}.mw-parser-output .ts-Скрытый_блок+.ts-Скрытый_блок,.mw-parser-output .ts-Скрытый_блок+link+.ts-Скрытый_блок{border-top-style:hidden}</style><div class="mw-collapsible mw-collapsed ts-Скрытый_блок ts-Скрытый_блок-gray ts-Скрытый_блок-rightHideLink" style=""><div class="ts-Скрытый_блок-title" style="">(Нажмите "show" справа, чтобы посмотреть алгебраические выкладки в деталях или "hide", чтобы детали спрятать.)<div class="mw-collapsible-toggle-placeholder"></div></div><div class="mw-collapsible-content" style="">
+<p>Вспомним, что 
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle (u-v)^{2}=u^{2}-2uv+v^{2}.}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mo stretchy="false">(</mo>
+<mi>u</mi>
+<mo>−<!-- − --></mo>
+<mi>v</mi>
+<msup>
+<mo stretchy="false">)</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<msup>
+<mi>u</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>−<!-- − --></mo>
+<mn>2</mn>
+<mi>u</mi>
+<mi>v</mi>
+<mo>+</mo>
+<msup>
+<mi>v</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>.</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle (u-v)^{2}=u^{2}-2uv+v^{2}.}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle (u-v)^{2}=u^{2}-2uv+v^{2}.}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b26ab931bee9627f65c24ad57b34b85021cdbd34" style="vertical-align: -0.838ex; width:25.773ex; height:3.176ex;"/></span></dd></dl>
+<p>Тогда мы имеем <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle u^{2}+v^{2}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msup>
+<mi>u</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>v</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle u^{2}+v^{2}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle u^{2}+v^{2}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/39ace208ab6156e9c4d88429481947c74c4a9aaf" style="vertical-align: -0.505ex; width:7.406ex; height:2.843ex;"/></span> и мы можем добавить <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle -2uv}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mo>−<!-- − --></mo>
+<mn>2</mn>
+<mi>u</mi>
+<mi>v</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle -2uv}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle -2uv}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a4b7b290016fe649c5c73afe80cfa8710459e76f" style="vertical-align: -0.505ex; width:5.428ex; height:2.343ex;"/></span>, чтобы получить полный квадрат.  Мы имеем
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle x+{\frac {ab}{x}}.}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>x</mi>
+<mo>+</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mrow>
+<mo>.</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle x+{\frac {ab}{x}}.}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle x+{\frac {ab}{x}}.}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f321c7caa13e7562a83dae922919b429b722b9d8" style="vertical-align: -1.838ex; width:7.88ex; height:5.343ex;"/></span></dd></dl>
+<p>Если мы примем <i>x</i> как <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle u^{2}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msup>
+<mi>u</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle u^{2}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle u^{2}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/291091343cb7c98ba83d15fdba9fc794a940829f" style="vertical-align: -0.338ex; width:2.384ex; height:2.676ex;"/></span> и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle {\tfrac {ab}{x}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="false" scriptlevel="0">
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mstyle>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle {\tfrac {ab}{x}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle {\tfrac {ab}{x}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/64f1c03380b00138e341189a5129a5f30247f068" style="vertical-align: -1.005ex; width:2.411ex; height:3.509ex;"/></span> как <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle v^{2}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msup>
+<mi>v</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle v^{2}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle v^{2}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4faa98a21ac8133ab466999288849492be28b3d1" style="vertical-align: -0.338ex; width:2.182ex; height:2.676ex;"/></span>, тогда <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle u={\sqrt {x}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>u</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle u={\sqrt {x}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle u={\sqrt {x}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ae3e2d0e48902c6e12737ef3a6eaa2d9acd7075d" style="vertical-align: -1.005ex; width:7.694ex; height:3.009ex;"/></span> и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle v={\sqrt {\tfrac {ab}{x}}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>v</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mstyle displaystyle="false" scriptlevel="0">
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mstyle>
+</msqrt>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle v={\sqrt {\tfrac {ab}{x}}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle v={\sqrt {\tfrac {ab}{x}}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/df61061059f5799e829200559d6182da1802f59f" style="vertical-align: -1.671ex; width:8.961ex; height:4.843ex;"/></span>, а потому
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle 2uv=2{\sqrt {x}}{\sqrt {\frac {ab}{x}}}=2{\sqrt {ab\,{}}}.}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mn>2</mn>
+<mi>u</mi>
+<mi>v</mi>
+<mo>=</mo>
+<mn>2</mn>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mn>2</mn>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>a</mi>
+<mi>b</mi>
+<mspace width="thinmathspace"></mspace>
+<mrow class="MJX-TeXAtom-ORD">
+</mrow>
+</msqrt>
+</mrow>
+<mo>.</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle 2uv=2{\sqrt {x}}{\sqrt {\frac {ab}{x}}}=2{\sqrt {ab\,{}}}.}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle 2uv=2{\sqrt {x}}{\sqrt {\frac {ab}{x}}}=2{\sqrt {ab\,{}}}.}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b46fc5a076ef363a1c36ab4a4dcb1147d2724cec" style="vertical-align: -2.338ex; width:25.992ex; height:6.176ex;"/></span></dd></dl>
+<p>Получаем
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle {\begin{aligned}x+{\frac {ab}{x}}&amp;=u^{2}+v^{2}=\underbrace {\left(u^{2}-2uv+v^{2}\right)} _{\text{полный квадрат }}+2uv\\&amp;=(u-v)^{2}+2uv=\left({\sqrt {x}}-{\sqrt {\frac {ab}{x}}}\,\right)^{2}+2{\sqrt {ab\,{}}}.\end{aligned}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow class="MJX-TeXAtom-ORD">
+<mtable columnalign="right left right left right left right left right left right left" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true" rowspacing="3pt">
+<mtr>
+<mtd>
+<mi>x</mi>
+<mo>+</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mrow>
+</mtd>
+<mtd>
+<mi></mi>
+<mo>=</mo>
+<msup>
+<mi>u</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>v</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>=</mo>
+<munder>
+<mrow class="MJX-TeXAtom-OP MJX-fixedlimits">
+<munder>
+<mrow>
+<mo>(</mo>
+<mrow>
+<msup>
+<mi>u</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>−<!-- − --></mo>
+<mn>2</mn>
+<mi>u</mi>
+<mi>v</mi>
+<mo>+</mo>
+<msup>
+<mi>v</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>⏟<!-- ⏟ --></mo>
+</munder>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mtext>полный квадрат </mtext>
+</mrow>
+</munder>
+<mo>+</mo>
+<mn>2</mn>
+<mi>u</mi>
+<mi>v</mi>
+</mtd>
+</mtr>
+<mtr>
+<mtd></mtd>
+<mtd>
+<mi></mi>
+<mo>=</mo>
+<mo stretchy="false">(</mo>
+<mi>u</mi>
+<mo>−<!-- − --></mo>
+<mi>v</mi>
+<msup>
+<mo stretchy="false">)</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<mi>u</mi>
+<mi>v</mi>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>x</mi>
+</msqrt>
+</mrow>
+<mo>−<!-- − --></mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mfrac>
+<mrow>
+<mi>a</mi>
+<mi>b</mi>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</msqrt>
+</mrow>
+<mspace width="thinmathspace"></mspace>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>a</mi>
+<mi>b</mi>
+<mspace width="thinmathspace"></mspace>
+<mrow class="MJX-TeXAtom-ORD">
+</mrow>
+</msqrt>
+</mrow>
+<mo>.</mo>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}x+{\frac {ab}{x}}&amp;=u^{2}+v^{2}=\underbrace {\left(u^{2}-2uv+v^{2}\right)} _{\text{полный квадрат }}+2uv\\&amp;=(u-v)^{2}+2uv=\left({\sqrt {x}}-{\sqrt {\frac {ab}{x}}}\,\right)^{2}+2{\sqrt {ab\,{}}}.\end{aligned}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle {\begin{aligned}x+{\frac {ab}{x}}&amp;=u^{2}+v^{2}=\underbrace {\left(u^{2}-2uv+v^{2}\right)} _{\text{полный квадрат }}+2uv\\&amp;=(u-v)^{2}+2uv=\left({\sqrt {x}}-{\sqrt {\frac {ab}{x}}}\,\right)^{2}+2{\sqrt {ab\,{}}}.\end{aligned}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c79c72e104eab933da32270c77b994252c1b048e" style="vertical-align: -7.338ex; width:54.359ex; height:15.843ex;"/></span></dd></dl>
+</div></div>
+<p>Эта величина минимальна, когда корень равен 0, а это происходит когда <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle x={\sqrt {ab}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>x</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>a</mi>
+<mi>b</mi>
+</msqrt>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle x={\sqrt {ab}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle x={\sqrt {ab}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c83703fa4a17e068d3dc44c78d7b1cd9fdffa714" style="vertical-align: -0.671ex; width:8.591ex; height:3.009ex;"/></span>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Примечания"><span id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.87.D0.B0.D0.BD.D0.B8.D1.8F"></span>Примечания</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;veaction=edit&amp;section=4" title="Редактировать раздел «Примечания»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=edit&amp;section=4" title="Редактировать код раздела «Примечания»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="reflist columns" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-_c0ec93401e05a1a6-1"><span class="mw-cite-backlink"><a href="#cite_ref-_c0ec93401e05a1a6_1-0">↑</a></span> <span class="reference-text"><a href="#CITEREFDörrie1965">Dörrie, 1965</a>, с. 369–370.</span>
+</li>
+<li id="cite_note-_c5e3f7a80d7b168a-2"><span class="mw-cite-backlink"><a href="#cite_ref-_c5e3f7a80d7b168a_2-0">↑</a></span> <span class="reference-text"><a href="#CITEREFMaor2002">Maor, 2002</a>, с. 46—48.</span>
+</li>
+<li id="cite_note-_afd44d0d45921f27-3"><span class="mw-cite-backlink"><a href="#cite_ref-_afd44d0d45921f27_3-0">↑</a></span> <span class="reference-text"><a href="#CITEREFJones,_Jackson2001">Jones, Jackson, 2001</a>, с. 649–654.</span>
+</li>
+<li id="cite_note-_c31a30b55889167d-4"><span class="mw-cite-backlink"><a href="#cite_ref-_c31a30b55889167d_4-0">↑</a></span> <span class="reference-text"><a href="#CITEREFStewart2003">Stewart, 2003</a>, с. 340.</span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="Литература"><span id=".D0.9B.D0.B8.D1.82.D0.B5.D1.80.D0.B0.D1.82.D1.83.D1.80.D0.B0"></span>Литература</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;veaction=edit&amp;section=5" title="Редактировать раздел «Литература»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=edit&amp;section=5" title="Редактировать код раздела «Литература»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="columns reflist not-references" style=";column-count:1; column-width: 30em;">
+<ul><li><style data-mw-deduplicate="TemplateStyles:r141305934">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a::after,.mw-parser-output .id-lock-limited a::after,.mw-parser-output .id-lock-registration a::after,.mw-parser-output .id-lock-subscription a::after,.mw-parser-output .cs1-ws-icon a::after{content:"";width:1.1em;height:1.1em;display:inline-block;vertical-align:middle;background-position:center;background-repeat:no-repeat;background-size:contain}.mw-parser-output .id-lock-free.id-lock-free a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")}.mw-parser-output .id-lock-limited.id-lock-limited a::after,.mw-parser-output .id-lock-registration.id-lock-registration a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")}.mw-parser-output .id-lock-subscription.id-lock-subscription a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")}.mw-parser-output .cs1-ws-icon a::after{background-image:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#d33)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#d33)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}html.skin-theme-clientpref-night .mw-parser-output .id-lock-free a::after,html.skin-theme-clientpref-night .mw-parser-output .id-lock-limited a::after,html.skin-theme-clientpref-night .mw-parser-output .id-lock-registration a::after,html.skin-theme-clientpref-night .mw-parser-output .id-lock-subscription a::after{filter:invert(1)hue-rotate(180deg)}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}html.skin-theme-clientpref-os .mw-parser-output .id-lock-free a::after,html.skin-theme-clientpref-os .mw-parser-output .id-lock-limited a::after,html.skin-theme-clientpref-os .mw-parser-output .id-lock-registration a::after,html.skin-theme-clientpref-os .mw-parser-output .id-lock-subscription a::after{filter:invert(1)hue-rotate(180deg)}}</style><span class="citation no-wikidata" data-wikidata-property-id="P1343" id="CITEREFDörrie1965"><i>Heinrich Dörrie.</i> 100 Great Problems of Elementary Mathematics: Their History And Solution. — Dover, 1965. — С. 369–370.</span></li>
+<li><link href="mw-data:TemplateStyles:r141305934" rel="mw-deduplicated-inline-style"><span class="citation no-wikidata" data-wikidata-property-id="P1343" id="CITEREFMaor2002"><i><a href="/wiki/%D0%9C%D0%B0%D0%BE%D1%80,_%D0%AD%D0%BB%D0%B8" title="Маор, Эли">Эли Маор</a>.</i> Trigonometric Delights. — <a class="mw-redirect" href="/wiki/Princeton_University_Press" title="Princeton University Press">Princeton University Press</a>, 2002. — С. 46–48.</span></link></li>
+<li><span class="citation" id="CITEREFJones,_Jackson2001"><i>Troy Jones, Steven Jackson.</i> <a class="external text" href="http://wesclark.com/rrr/rugby_and_math.pdf" rel="nofollow">Rugby and Mathematics: A Surprising Link among Geometry, the Conics, and Calculus</a> // Mathematics Teacher. — 2001. — <span class="nowrap">Т. 94</span>, <span class="nowrap">вып. 8</span>. — <span class="nowrap">С. 649–654</span>. — <a class="mw-redirect" href="/wiki/Doi" title="Doi">doi</a>:<a class="external text" href="https://dx.doi.org/10.5951%2FMT.94.8.0649" rel="nofollow">10.5951/MT.94.8.0649</a>.</span></li>
+<li><link href="mw-data:TemplateStyles:r141305934" rel="mw-deduplicated-inline-style"><span class="citation no-wikidata" data-wikidata-property-id="P1343" id="CITEREFStewart2003"><i>James Stewart.</i> <span data-wikidata-qualifier-id="P248">exercise 58</span> // <a class="external text" href="https://archive.org/details/isbn_9780495467779" rel="nofollow">Calculus: Early Transcendentals</a>. — Fifth Edition. — Brooks/Cole, 2003. — С. <a class="external text" href="https://archive.org/details/isbn_9780495467779/page/340" rel="nofollow">340</a>.</span></link></li></ul>
+</div>
+<div aria-labelledby="Разделы_вещественного_анализа" class="navbox" data-name="Разделы вещественного анализа" role="navigation"><table class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th class="navbox-title" colspan="2" scope="colgroup"><span class="navbox-gear" style="float:left;text-align:left;width:5em;margin-right:0.5em"><span class="noprint skin-invert-image" typeof="mw:File"><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D1%8B_%D0%B2%D0%B5%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0" title="Перейти к шаблону «Разделы вещественного анализа»"><img alt="Перейти к шаблону «Разделы вещественного анализа»" class="mw-file-element" data-file-height="14" data-file-width="14" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/14px-Wikipedia_interwiki_section_gear_icon.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/21px-Wikipedia_interwiki_section_gear_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/28px-Wikipedia_interwiki_section_gear_icon.svg.png 2x" width="14"/></a></span></span><div id="Разделы_вещественного_анализа" style="font-size:114%;margin:0 5em">Разделы вещественного анализа</div></th></tr><tr><th class="navbox-group" scope="row" style="width:1px">Основы анализа</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F_%D0%AD%D0%B9%D0%BB%D0%B5%D1%80%D0%B0" title="Функция Эйлера">Функция Эйлера</a> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \phi (n)}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>ϕ<!-- ϕ --></mi>
+<mo stretchy="false">(</mo>
+<mi>n</mi>
+<mo stretchy="false">)</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \phi (n)}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \phi (n)}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fbb3dbe542ca7d51c4f32e32cefb8572edb26ab3" style="vertical-align: -0.838ex; width:4.589ex; height:2.843ex;"/></span></li>
+<li><a class="mw-redirect" href="/wiki/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F_%D0%96%D0%BE%D1%80%D0%B4%D0%B0%D0%BD%D0%B0" title="Функция Жордана">Функция Жордана</a></li>
+<li><a href="/wiki/%D0%91%D0%B8%D0%BD%D0%BE%D0%BC_%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD%D0%B0" title="Бином Ньютона">Бином Ньютона</a></li>
+<li><a href="/wiki/%D0%92%D1%8B%D0%BF%D1%83%D0%BA%D0%BB%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Выпуклая функция">Выпуклая функция</a></li>
+<li><a href="/wiki/%D0%9D%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B5_%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5" title="Непрерывное отображение">Непрерывное отображение</a></li>
+<li><a href="/wiki/%D0%A4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B0%D0%BB" title="Факториал">Факториал</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D0%B5_%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Конечные разности">Конечные разности</a></li>
+<li><a class="new" href="/w/index.php?title=Free_variables_and_bound_variables&amp;action=edit&amp;redlink=1" title="Free variables and bound variables (страница отсутствует)">Свободные и связанные переменные</a></li>
+<li><a href="/wiki/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="График функции">График функции</a></li>
+<li><a href="/wiki/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Линейная функция">Линейная функция</a></li>
+<li><a href="/wiki/%D0%A0%D0%B0%D0%B4%D0%B8%D0%B0%D0%BD" title="Радиан">Радиан</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A0%D0%BE%D0%BB%D0%BB%D1%8F" title="Теорема Ролля">Теорема Ролля</a></li>
+<li><a href="/wiki/%D0%A1%D0%B5%D0%BA%D1%83%D1%89%D0%B0%D1%8F_%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F" title="Секущая прямая"> Секущая</a></li>
+<li><a href="/wiki/%D0%A3%D0%B3%D0%BB%D0%BE%D0%B2%D0%BE%D0%B9_%D0%BA%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82" title="Угловой коэффициент">Угловой коэффициент</a></li>
+<li><a href="/wiki/%D0%9A%D0%B0%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F" title="Касательная прямая">Касательная</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px"><a href="/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" title="Предел (математика)">Пределы</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%A0%D0%B0%D1%81%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5_%D0%BD%D0%B5%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9" title="Раскрытие неопределённостей">Раскрытие неопределённостей</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Предел функции">Предел функции</a>
+<ul><li><a href="/wiki/%D0%9E%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D0%BD%D0%B8%D0%B9_%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB" title="Односторонний предел">Односторонний предел</a></li></ul></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Предел последовательности">Предел последовательности</a></li>
+<li><a class="new" href="/w/index.php?title=Order_of_approximation&amp;action=edit&amp;redlink=1" title="Order of approximation (страница отсутствует)">Порядок аппроксимации</a></li>
+<li><a href="/wiki/%D0%9E%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B0_%D0%B2_%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D1%85_%D1%8D%D0%BF%D1%81%D0%B8%D0%BB%D0%BE%D0%BD_%D0%B8_%D0%B4%D0%B5%D0%BB%D1%8C%D1%82%D0%B0" title="Определение предела в терминах эпсилон и дельта">(ε, δ)-определение предела</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px"><a href="/wiki/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D0%B8%D1%81%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5" title="Дифференциальное исчисление"> Дифференциальное<br/>исчисление</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Производная функции">Производная функции</a></li>
+<li><a href="/wiki/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%83%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5" title="Дифференциальное уравнение">Дифференциальное уравнение</a></li>
+<li><a href="/wiki/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80" title="Дифференциальный оператор">Дифференциальный оператор</a></li>
+<li><a href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85_%D0%BF%D1%80%D0%B8%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B9" title="Формула конечных приращений">Теорема о среднем</a></li>
+<li><a class="new" href="/w/index.php?title=Notation_for_differentiation&amp;action=edit&amp;redlink=1" title="Notation for differentiation (страница отсутствует)">Обозначения </a>
+<ul><li><a href="/wiki/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE_%D0%BC%D0%B0%D0%BB%D1%8B%D1%85" title="Анализ бесконечно малых">Нотация Лейбница</a></li>
+<li><a class="new" href="/w/index.php?title=Newton%27s_notation_for_differentiation&amp;action=edit&amp;redlink=1" title="Newton's notation for differentiation (страница отсутствует)">Нотация Ньютона</a></li></ul></li>
+<li><a href="/wiki/%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D1%85" title="Таблица производных">Правила дифференцирования</a>
+<ul><li><a class="new" href="/w/index.php?title=Linearity_of_differentiation&amp;action=edit&amp;redlink=1" title="Linearity of differentiation (страница отсутствует)"> Линейность</a></li>
+<li><a class="new" href="/w/index.php?title=Power_rule&amp;action=edit&amp;redlink=1" title="Power rule (страница отсутствует)">Дифференцирование степени</a></li>
+<li><a href="/wiki/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B9_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Дифференцирование сложной функции">Дифференцирование сложной функции</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE_%D0%9B%D0%BE%D0%BF%D0%B8%D1%82%D0%B0%D0%BB%D1%8F" title="Правило Лопиталя">Правило Лопиталя</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F" title="Правило произведения">Правило произведения</a>
+<ul><li><a href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%9B%D0%B5%D0%B9%D0%B1%D0%BD%D0%B8%D1%86%D0%B0_(%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F)" title="Формула Лейбница (производной произведения)">Формула Лейбница</a></li></ul></li>
+<li><a class="new" href="/w/index.php?title=Quotient_rule&amp;action=edit&amp;redlink=1" title="Quotient rule (страница отсутствует)">Производная от дроби</a></li></ul></li>
+<li>Другие техники
+<ul><li><a href="/wiki/%D0%9D%D0%B5%D1%8F%D0%B2%D0%BD%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F#Неявное_дифференцирование" title="Неявная функция">Неявное дифференцирование</a></li>
+<li><a class="new" href="/w/index.php?title=Inverse_functions_rules_and_differentiation&amp;action=edit&amp;redlink=1" title="Inverse functions rules and differentiation (страница отсутствует)">Дифференцирование обратной функции</a></li>
+<li><a class="new" href="/w/index.php?title=Logarithmic_derivativation&amp;action=edit&amp;redlink=1" title="Logarithmic derivativation (страница отсутствует)">Логарифмическая производная</a></li>
+<li><a class="new" href="/w/index.php?title=Related_rates&amp;action=edit&amp;redlink=1" title="Related rates (страница отсутствует)">Связанные коэффициенты</a></li></ul></li>
+<li><a class="mw-redirect" href="/wiki/%D0%A1%D1%82%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D1%80%D0%BD%D0%B0%D1%8F_%D1%82%D0%BE%D1%87%D0%BA%D0%B0" title="Стационарная точка">Стационарные точки</a>
+<ul><li><a class="new" href="/w/index.php?title=Derivative_test&amp;action=edit&amp;redlink=1" title="Derivative test (страница отсутствует)">Тест первой производной</a></li>
+<li><a class="new" href="/w/index.php?title=Derivative_test&amp;action=edit&amp;redlink=1" title="Derivative test (страница отсутствует)">Тест второй производной</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%92%D0%B5%D0%B9%D0%B5%D1%80%D1%88%D1%82%D1%80%D0%B0%D1%81%D1%81%D0%B0_%D0%BE_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8_%D0%BD%D0%B0_%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82%D0%B5" title="Теорема Вейерштрасса о функции на компакте">Теорема об экстремумах</a></li>
+<li><a href="/wiki/%D0%AD%D0%BA%D1%81%D1%82%D1%80%D0%B5%D0%BC%D1%83%D0%BC" title="Экстремум">Экстремум</a></li></ul></li>
+<li>Другие приложения
+<ul><li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD%D0%B0" title="Метод Ньютона">Метод Ньютона</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A2%D0%B5%D0%B9%D0%BB%D0%BE%D1%80%D0%B0" title="Теорема Тейлора">Теорема Тейлора</a></li></ul></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px"><a href="/wiki/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Интеграл">Интеграл</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BD%D0%B0%D1%8F" title="Первообразная">Первообразная</a></li>
+<li><a href="/wiki/%D0%94%D0%BB%D0%B8%D0%BD%D0%B0_%D0%BA%D1%80%D0%B8%D0%B2%D0%BE%D0%B9" title="Длина кривой">Длина кривой</a></li>
+<li><a href="/wiki/%D0%9F%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" title="Постоянная интегрирования">Постоянная интегрирования</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD%D0%B0_%E2%80%94_%D0%9B%D0%B5%D0%B9%D0%B1%D0%BD%D0%B8%D1%86%D0%B0" title="Теорема Ньютона — Лейбница">Основная теорема анализа</a>
+<ul><li><a href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%9B%D0%B5%D0%B9%D0%B1%D0%BD%D0%B8%D1%86%D0%B0_(%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D0%B0_%D1%81_%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BC)" title="Формула Лейбница (производной интеграла с параметром)">Дифференцирование под знаком интеграла</a></li></ul></li>
+<li><a href="/wiki/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D0%BE_%D1%87%D0%B0%D1%81%D1%82%D1%8F%D0%BC" title="Интегрирование по частям">Интегрирование по частям</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F#_Метод_замены_переменной_(метод_подстановки)" title="Методы интегрирования">Метод подстановки</a>
+<ul><li><a href="/wiki/%D0%A2%D1%80%D0%B8%D0%B3%D0%BE%D0%BD%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0" title="Тригонометрическая подстановка">Тригонометрическая подстановка</a></li>
+<li><a href="/wiki/%D0%9F%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8_%D0%AD%D0%B9%D0%BB%D0%B5%D1%80%D0%B0" title="Подстановки Эйлера">Подстановки Эйлера</a></li>
+<li><a href="/wiki/%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%82%D1%80%D0%B8%D0%B3%D0%BE%D0%BD%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D0%BE%D0%B4%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0" title="Универсальная тригонометрическая подстановка">Подстановка Вейерштрасса</a></li></ul></li>
+<li><a href="/wiki/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9#Разложение_на_простейшие" title="Интегрирование рациональных функций"> Разложение на простейшие</a>
+<ul><li><a class="new" href="/w/index.php?title=Quadratic_integral&amp;action=edit&amp;redlink=1" title="Quadratic integral (страница отсутствует)">Квадратичный интеграл</a></li></ul></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D1%82%D1%80%D0%B0%D0%BF%D0%B5%D1%86%D0%B8%D0%B9" title="Метод трапеций">Метод трапеций</a></li>
+<li>Объёмы
+<ul><li><a class="new" href="/w/index.php?title=Disc_integration&amp;action=edit&amp;redlink=1" title="Disc integration (страница отсутствует)">Метод Вошера</a></li>
+<li><a class="new" href="/w/index.php?title=Shell_integration&amp;action=edit&amp;redlink=1" title="Shell integration (страница отсутствует)">Интегрирование подграфика</a></li></ul></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px"><a href="/wiki/%D0%92%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7" title="Векторный анализ">Векторный<br/>анализ</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li>Derivatives
+<ul><li><a href="/wiki/%D0%A0%D0%BE%D1%82%D0%BE%D1%80_(%D0%B4%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80)" title="Ротор (дифференциальный оператор)">Ротор</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE_%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E" title="Производная по направлению">Производная по направлению</a></li>
+<li><a href="/wiki/%D0%94%D0%B8%D0%B2%D0%B5%D1%80%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%8F" title="Дивергенция">Дивергенция</a></li>
+<li><a href="/wiki/%D0%93%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82" title="Градиент">Градиент</a></li>
+<li><a href="/wiki/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80_%D0%9B%D0%B0%D0%BF%D0%BB%D0%B0%D1%81%D0%B0" title="Оператор Лапласа">Лапласиан</a></li></ul></li>
+<li>Основные теоремы
+<ul><li><a class="new" href="/w/index.php?title=Fundamental_Theorem_of_Line_Integrals&amp;action=edit&amp;redlink=1" title="Fundamental Theorem of Line Integrals (страница отсутствует)">Теорема о градиенте</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%93%D1%80%D0%B8%D0%BD%D0%B0" title="Теорема Грина">Теорема Грина</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A1%D1%82%D0%BE%D0%BA%D1%81%D0%B0" title="Теорема Стокса">Теорема Стокса</a></li>
+<li><a class="mw-redirect" href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%93%D0%B0%D1%83%D1%81%D1%81%D0%B0_%E2%80%94_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE" title="Формула Гаусса — Остроградского">Формула Гаусса — Остроградского</a></li></ul></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px"><a href="/wiki/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9_%D0%BC%D0%BD%D0%BE%D0%B3%D0%B8%D1%85_%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85" title="Анализ функций многих переменных">Анализ<br/>функций <br/>многих<br/>переменных</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a class="mw-redirect" href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%93%D0%B0%D1%83%D1%81%D1%81%D0%B0_%E2%80%94_%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE" title="Формула Гаусса — Остроградского">Формула Гаусса — Остроградского</a></li>
+<li><a class="new" href="/w/index.php?title=%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7&amp;action=edit&amp;redlink=1" title="Геометрический анализ (страница отсутствует)">Геометрический анализ</a></li>
+<li><a href="/wiki/%D0%93%D0%B5%D1%81%D1%81%D0%B8%D0%B0%D0%BD_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Гессиан функции">Гессиан функции</a></li>
+<li><a href="/wiki/%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0_%D0%AF%D0%BA%D0%BE%D0%B1%D0%B8" title="Матрица Якоби">Матрица Якоби</a></li>
+<li><a href="/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%BC%D0%BD%D0%BE%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9_%D0%9B%D0%B0%D0%B3%D1%80%D0%B0%D0%BD%D0%B6%D0%B0" title="Метод множителей Лагранжа">Множители Лагранжа</a></li>
+<li><a href="/wiki/%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Криволинейный интеграл">Криволинейный интеграл</a></li>
+<li><a class="new" href="/w/index.php?title=Matrix_calculus&amp;action=edit&amp;redlink=1" title="Matrix calculus (страница отсутствует)">Матричный анализ</a></li>
+<li><a href="/wiki/%D0%9A%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB" title="Кратный интеграл">Кратный интеграл</a></li>
+<li><a href="/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F" title="Частная производная">Частная производная</a></li>
+<li><a href="/wiki/%D0%9F%D0%BE%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%BE%D1%81%D1%82%D0%BD%D1%8B%D0%B5_%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D1%8B" title="Поверхностные интегралы">Поверхностные интегралы</a></li>
+<li><a class="new" href="/w/index.php?title=Volume_integral&amp;action=edit&amp;redlink=1" title="Volume integral (страница отсутствует)">Интеграл по объёму</a></li>
+<li>Дополнительные главы
+<ul><li><a href="/wiki/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%84%D0%BE%D1%80%D0%BC%D0%B0" title="Дифференциальная форма">Дифференциальные формы</a></li>
+<li><a class="mw-redirect" href="/wiki/%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D1%8F%D1%8F_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F" title="Внешняя производная">Внешняя производная</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A1%D1%82%D0%BE%D0%BA%D1%81%D0%B0" title="Теорема Стокса">Обобщённая теорема Стокса</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BD%D0%B7%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7" title="Тензорный анализ">Тензорный анализ</a>)</li></ul></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Последовательности<br/> и ряды</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%90%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%BE-%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F" title="Арифметико-геометрическая прогрессия">Арифметико-геометрическая прогрессия</a></li>
+<li>Виды рядов
+<ul><li><a href="/wiki/%D0%97%D0%BD%D0%B0%D0%BA%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F_%D1%80%D1%8F%D0%B4" title="Знакочередующийся ряд">Знакочередующийся</a></li>
+<li><a href="/wiki/%D0%91%D0%B8%D0%BD%D0%BE%D0%BC%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%80%D1%8F%D0%B4" title="Биномиальный ряд">Биномиальный</a></li>
+<li><a href="/wiki/%D0%A0%D1%8F%D0%B4_%D0%A4%D1%83%D1%80%D1%8C%D0%B5" title="Ряд Фурье">Ряд Фурье</a></li>
+<li><a class="new" href="/w/index.php?title=Geometric_series&amp;action=edit&amp;redlink=1" title="Geometric series (страница отсутствует)">Геометрический ряд</a></li>
+<li><a href="/wiki/%D0%93%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D1%8F%D0%B4" title="Гармонический ряд">Гармонический</a></li>
+<li><a href="/wiki/%D0%A0%D1%8F%D0%B4_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" title="Ряд (математика)">Ряд</a></li>
+<li><a href="/wiki/%D0%A1%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9_%D1%80%D1%8F%D0%B4" title="Степенной ряд">Степенной</a>
+<ul><li><a class="mw-redirect" href="/wiki/%D0%A0%D1%8F%D0%B4_%D0%9C%D0%B0%D0%BA%D0%BB%D0%BE%D1%80%D0%B5%D0%BD%D0%B0" title="Ряд Маклорена">Маклорена</a></li>
+<li><a href="/wiki/%D0%A0%D1%8F%D0%B4_%D0%A2%D0%B5%D0%B9%D0%BB%D0%BE%D1%80%D0%B0" title="Ряд Тейлора">Тейлора</a></li></ul></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%80%D1%8F%D0%B4" title="Телескопический ряд">Телескопический</a></li></ul></li>
+<li>Признаки сходимости
+<ul><li><a href="/wiki/%D0%9F%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA_%D0%90%D0%B1%D0%B5%D0%BB%D1%8F" title="Признак Абеля">Абеля</a></li>
+<li><a href="/wiki/%D0%97%D0%BD%D0%B0%D0%BA%D0%BE%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F_%D1%80%D1%8F%D0%B4#Признак_Лейбница" title="Знакочередующийся ряд">Лейбница</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BB%D0%B5%D1%81%D0%BA%D0%BE%D0%BF%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA" title="Телескопический признак">Коши</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA_%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" title="Признак сравнения">Признак сравнения</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA_%D0%94%D0%B8%D1%80%D0%B8%D1%85%D0%BB%D0%B5" title="Признак Дирихле">Дирихле</a></li>
+<li><a href="/wiki/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA_%D0%9A%D0%BE%D1%88%D0%B8_%E2%80%94_%D0%9C%D0%B0%D0%BA%D0%BB%D0%BE%D1%80%D0%B5%D0%BD%D0%B0" title="Интегральный признак Коши — Маклорена">Интегральный</a></li>
+<li><a class="new" href="/w/index.php?title=Limit_comparison_test&amp;action=edit&amp;redlink=1" title="Limit comparison test (страница отсутствует)">Сравнение пределов</a></li>
+<li><a class="mw-redirect" href="/wiki/%D0%9F%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA_%D0%94%E2%80%99%D0%90%D0%BB%D0%B0%D0%BC%D0%B1%D0%B5%D1%80%D0%B0" title="Признак Д’Аламбера">Д’Аламбера</a></li>
+<li><a href="/wiki/%D0%A0%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA_%D0%9A%D0%BE%D1%88%D0%B8" title="Радикальный признак Коши">Радикальный</a></li>
+<li><a href="/wiki/%D0%9D%D0%B5%D0%BE%D0%B1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D0%B5_%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5_%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8_%D1%80%D1%8F%D0%B4%D0%BE%D0%B2" title="Необходимое условие сходимости рядов">Необходимое условие</a></li></ul></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Специальные<br/>функции и числа</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%91%D0%B5%D1%80%D0%BD%D1%83%D0%BB%D0%BB%D0%B8" title="Числа Бернулли">Числа Бернулли</a></li>
+<li><a href="/wiki/E_(%D1%87%D0%B8%D1%81%D0%BB%D0%BE)" title="E (число)">e (число)</a></li>
+<li><a href="/wiki/%D0%9F%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Показательная функция">Показательная функция</a></li>
+<li><a href="/wiki/%D0%9D%D0%B0%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%BB%D0%BE%D0%B3%D0%B0%D1%80%D0%B8%D1%84%D0%BC" title="Натуральный логарифм">Натуральный логарифм</a></li>
+<li><a href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%A1%D1%82%D0%B8%D1%80%D0%BB%D0%B8%D0%BD%D0%B3%D0%B0" title="Формула Стирлинга">Формула Стирлинга</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px"><a href="/wiki/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE_%D0%BC%D0%B0%D0%BB%D1%8B%D1%85" title="Анализ бесконечно малых">Анализ<br/>бесконечно<br/>малых</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a class="new" href="/w/index.php?title=Adequality&amp;action=edit&amp;redlink=1" title="Adequality (страница отсутствует)">Адекватность</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%B9%D0%BB%D0%BE%D1%80,_%D0%91%D1%80%D1%83%D0%BA" title="Тейлор, Брук">Брук Тейлор</a></li>
+<li><a href="/wiki/%D0%9C%D0%B0%D0%BA%D0%BB%D0%BE%D1%80%D0%B5%D0%BD,_%D0%9A%D0%BE%D0%BB%D0%B8%D0%BD" title="Маклорен, Колин">Колин Маклорен</a></li>
+<li><a class="new" href="/w/index.php?title=Generality_of_algebra&amp;action=edit&amp;redlink=1" title="Generality of algebra (страница отсутствует)">Универсальность алгебры</a></li>
+<li><a href="/wiki/%D0%9B%D0%B5%D0%B9%D0%B1%D0%BD%D0%B8%D1%86,_%D0%93%D0%BE%D1%82%D1%84%D1%80%D0%B8%D0%B4_%D0%92%D0%B8%D0%BB%D1%8C%D0%B3%D0%B5%D0%BB%D1%8C%D0%BC" title="Лейбниц, Готфрид Вильгельм">Готфрид Вильгельм Лейбниц</a></li>
+<li><a href="/wiki/%D0%91%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE_%D0%BC%D0%B0%D0%BB%D0%B0%D1%8F_%D0%B8_%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE_%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F" title="Бесконечно малая и бесконечно большая">Бесконечно малая и бесконечно большая</a></li>
+<li><a href="/wiki/%D0%9D%D1%8C%D1%8E%D1%82%D0%BE%D0%BD,_%D0%98%D1%81%D0%B0%D0%B0%D0%BA" title="Ньютон, Исаак">Исаак Ньютон</a></li>
+<li><a class="new" href="/w/index.php?title=Fluxion&amp;action=edit&amp;redlink=1" title="Fluxion (страница отсутствует)">Флюксии</a></li>
+<li><i><a class="new" href="/w/index.php?title=Method_of_Fluxions&amp;action=edit&amp;redlink=1" title="Method of Fluxions (страница отсутствует)">Метод флюксий</a></i></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF_%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Принцип непрерывности">Принцип непрерывности</a></li>
+<li><a href="/wiki/%D0%AD%D0%B9%D0%BB%D0%B5%D1%80,_%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4" title="Эйлер, Леонард">Леонард Эйлер</a></li>
+<li><i><a class="new" href="/w/index.php?title=The_Method_of_Mechanical_Theorems&amp;action=edit&amp;redlink=1" title="The Method of Mechanical Theorems (страница отсутствует)">Метод механических теорем</a></i></li></ul>
+</div></td></tr></tbody></table></div>
+<style data-mw-deduplicate="TemplateStyles:r137874932">.mw-parser-output .ambox{border:1px solid var(--border-color-base,#a2a9b1);border-left:10px solid #36c;background:var(--background-color-neutral-subtle,#f8f9fa);box-sizing:border-box;margin:0 10%}html body.mediawiki.skin-minerva .mw-parser-output .ambox{border-width:0 0 0 4px}.mw-parser-output .ambox+link+.ambox,.mw-parser-output .ambox+link+style+.ambox,.mw-parser-output .ambox+link+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+style+.ambox,.mw-parser-output .ambox+.mw-empty-elt+link+link+.ambox{margin-top:-1px}html body.mediawiki .mw-parser-output .ambox.mbox-small-left{margin:4px 1em 4px 0;overflow:hidden;width:238px;border-collapse:collapse;font-size:88%;line-height:1.25em}.mw-parser-output .ambox-speedy{border-left:10px solid var(--border-color-error,#b32424);background-color:var(--background-color-error-subtle,#fee7e6)}.mw-parser-output .ambox-delete{border-left:10px solid var(--border-color-error,#b32424)}.mw-parser-output .ambox-content{border-left:10px solid #f28500}.mw-parser-output .ambox-style{border-left:10px solid var(--color-warning,#edab00)}.mw-parser-output .ambox-good{border-left:10px solid #66cc44}.mw-parser-output .ambox-discussion{border-left:10px solid #339966}.mw-parser-output .ambox-merge{border-left:10px solid #9932cc}.mw-parser-output .ambox-move{border-left:10px solid #9932cc}.mw-parser-output .ambox-protection{border-left:10px solid #a2a9b1}.mw-parser-output .ambox .mbox-text{border:none;padding:0.25em 0.5em;width:100%}.mw-parser-output .ambox .mbox-image{border:none;padding:2px 0 2px 0.5em;text-align:center}.mw-parser-output .ambox .mbox-imageright{border:none;padding:2px 0.5em 2px 0;text-align:center}.mw-parser-output .ambox .mbox-empty-cell{border:none;padding:0;width:1px}.mw-parser-output .ambox .mbox-image-div{width:52px}.mw-parser-output .ambox .mbox-textsmall-div{font-size:90%}html.client-js body.skin-minerva .mw-parser-output .mbox-text-span{margin-left:23px!important}@media(max-width:1366px){.mw-parser-output .ambox{margin-left:6%;margin-right:6%}}@media(max-width:719px){.mw-parser-output .ambox{margin-left:0;margin-right:0}}</style><table class="plainlinks metadata ambox ambox-style" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><span typeof="mw:File"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9A%D0%B0%D0%BA_%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Улучшение статьи"><img alt="Улучшение статьи" class="mw-file-element" data-file-height="44" data-file-width="44" decoding="async" height="40" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wiki_letter_w.svg/60px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wiki_letter_w.svg/80px-Wiki_letter_w.svg.png 2x" width="40"/></a></span></div></td><td class="mbox-text"><div class="mbox-text-div"><b>Для улучшения этой статьи <a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:Rq/%D0%9F%D0%BE%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" title="Шаблон:Rq/Пояснения">желательно</a>:</b><ul style="margin-top: 0;">
+<li>Проверить <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4_%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9" title="Википедия:Перевод статей">качество перевода</a> с иностранного языка.</li><li>Исправить статью согласно <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%AF%D0%B7%D1%8B%D0%BA_%D0%B8_%D1%81%D1%82%D0%B8%D0%BB%D1%8C" title="Википедия:Язык и стиль">стилистическим правилам Википедии</a>.</li><li>Проверить статью на грамматические, орфографические и пунктуационные ошибки.</li><li>Установить <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8-%D1%81%D0%B8%D1%80%D0%BE%D1%82%D1%8B" title="Википедия:Статьи-сироты">ссылки из других статей</a> Википедии.</li></ul></div><div class="mbox-textsmall-div hide-when-compact">После исправления проблемы исключите её из списка. Удалите шаблон, если устранены все недостатки.</div></td></tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐85d55f5b47‐4frp9
+Cached time: 20250317112301
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.285 seconds
+Real time usage: 1.370 seconds
+Preprocessor visited node count: 3766/1000000
+Post‐expand include size: 62360/2097152 bytes
+Template argument size: 3314/2097152 bytes
+Highest expansion depth: 14/100
+Expensive parser function count: 6/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 16686/5000000 bytes
+Lua time usage: 0.068/10.000 seconds
+Lua memory usage: 1744049/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  307.555      1 -total
+ 38.50%  118.419      1 Шаблон:Rq
+ 37.53%  115.438      1 Шаблон:Ambox
+ 18.98%   58.359     16 Шаблон:Rq/
+ 18.00%   55.369      1 Шаблон:Статья
+ 16.79%   51.651      1 Шаблон:Rq/linkless
+ 15.66%   48.152      1 Шаблон:Сортировка:_изолированные_статьи
+ 15.31%   47.102      3 Шаблон:Бсокр
+ 11.24%   34.578      1 Шаблон:Скрытый_блок
+ 10.92%   33.592      3 Шаблон:Книга
+-->
+<!-- Saved in parser cache with key ruwiki:pcache:9039788:|#|:idhash:canonical and timestamp 20250317112301 and revision id 140785278. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=0" style="border: none; position: absolute;" width="1"/></noscript>
+<div class="printfooter" data-nosnippet="">Источник — <a dir="ltr" href="https://ru.wikipedia.org/w/index.php?title=Задача_Региомонтана_о_максимизации_угла&amp;oldid=140785278">https://ru.wikipedia.org/w/index.php?title=Задача_Региомонтана_о_максимизации_угла&amp;oldid=140785278</a></div></div>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8" title="Служебная:Категории">Категории</a>: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A2%D1%80%D0%B8%D0%B3%D0%BE%D0%BD%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F" title="Категория:Тригонометрия">Тригонометрия</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7" title="Категория:Классический математический анализ">Классический математический анализ</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B8" title="Категория:История математики">История математики</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8" title="Категория:Математические задачи">Математические задачи</a></li></ul></div><div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">Скрытые категории: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9F%D0%BB%D0%BE%D1%85%D0%BE%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4" title="Категория:Википедия:Плохой перевод">Википедия:Плохой перевод</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BD%D0%B5%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Категория:Википедия:Стилистически некорректные статьи">Википедия:Стилистически некорректные статьи</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8,_%D1%82%D1%80%D0%B5%D0%B1%D1%83%D1%8E%D1%89%D0%B8%D0%B5_%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B8_%D0%BD%D0%B0_%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D0%B8_%D0%BE%D1%80%D1%84%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B8" title="Категория:Википедия:Статьи, требующие проверки на грамматические и орфографические ошибки">Википедия:Статьи, требующие проверки на грамматические и орфографические ошибки</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83" title="Категория:Википедия:Изолированные статьи по алфавиту">Википедия:Изолированные статьи по алфавиту</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8_(%D0%BD%D0%B5_%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE_%D1%82%D0%B8%D0%BF%D0%B0%D0%BC)" title="Категория:Википедия:Изолированные статьи (не распределённые по типам)">Википедия:Изолированные статьи (не распределённые по типам)</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D1%81_%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%B0%D0%BC%D0%B8_%D0%BD%D0%B5%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%BE%D0%B2_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83" title="Категория:Википедия:Статьи с шаблонами недостатков по алфавиту">Википедия:Статьи с шаблонами недостатков по алфавиту</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B_%D1%81_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D0%BC%D0%B8_%D0%B2_%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%D1%85" title="Категория:Страницы с ошибками в формулах">Страницы с ошибками в формулах</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B_%D1%81_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D0%BC%D0%B8_%D0%BF%D1%80%D0%B8_%D1%80%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%D0%B8%D0%BD%D0%B3%D0%B5_%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB" title="Категория:Страницы с ошибками при рендеринге формул">Страницы с ошибками при рендеринге формул</a></li></ul></div></div>
+</div>
+</div>
+<div id="mw-navigation">
+<h2>Навигация</h2>
+<div id="mw-head">
+<nav aria-labelledby="p-personal-label" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" id="p-personal">
+<h3 class="vector-menu-heading" id="p-personal-label">
+<span class="vector-menu-heading-label">Персональные инструменты</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="pt-anonuserpage"><span title="Страница участника для моего IP">Вы не представились системе</span></li><li class="mw-list-item" id="pt-anontalk"><a accesskey="n" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D1%91_%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" title="Страница обсуждений для моего IP [n]"><span>Обсуждение</span></a></li><li class="mw-list-item" id="pt-anoncontribs"><a accesskey="y" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4" title="Список правок, сделанных с этого IP-адреса [y]"><span>Вклад</span></a></li><li class="mw-list-item" id="pt-createaccount"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&amp;returnto=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0+%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0+%D0%BE+%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8+%D1%83%D0%B3%D0%BB%D0%B0" title="Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно."><span>Создать учётную запись</span></a></li><li class="mw-list-item" id="pt-login"><a accesskey="o" href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&amp;returnto=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0+%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0+%D0%BE+%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8+%D1%83%D0%B3%D0%BB%D0%B0" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]"><span>Войти</span></a></li>
+</ul>
+</div>
+</nav>
+<div id="left-navigation">
+<nav aria-labelledby="p-namespaces-label" class="mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy vector-menu" id="p-namespaces">
+<h3 class="vector-menu-heading" id="p-namespaces-label">
+<span class="vector-menu-heading-label">Пространства имён</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="selected mw-list-item" id="ca-nstab-main"><a accesskey="c" href="/wiki/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0" title="Просмотреть контентную страницу [c]"><span>Статья</span></a></li><li class="mw-list-item" id="ca-talk"><a accesskey="t" href="/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0" rel="discussion" title="Обсуждение основной страницы [t]"><span>Обсуждение</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-variants-label" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown vector-menu" id="p-variants">
+<input aria-haspopup="true" aria-labelledby="p-variants-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-variants" id="p-variants-checkbox" role="button" type="checkbox"/>
+<label class="vector-menu-heading" id="p-variants-label">
+<span class="vector-menu-heading-label">русский</span>
+</label>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+</ul>
+</div>
+</nav>
+</div>
+<div id="right-navigation">
+<nav aria-labelledby="p-views-label" class="mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy vector-menu" id="p-views">
+<h3 class="vector-menu-heading" id="p-views-label">
+<span class="vector-menu-heading-label">Просмотры</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="ca-view"><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;stable=1"><span>Читать</span></a></li><li class="collapsible selected mw-list-item" id="ca-current"><a accesskey="v" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;stable=0&amp;redirect=no" title="Показать текущую версию этой страницы [v]"><span>Текущая версия</span></a></li><li class="mw-list-item" id="ca-ve-edit"><a accesskey="v" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;veaction=edit" title="Редактировать данную страницу [v]"><span>Править</span></a></li><li class="collapsible mw-list-item" id="ca-edit"><a accesskey="e" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=edit" title="Править исходный текст этой страницы [e]"><span>Править код</span></a></li><li class="mw-list-item" id="ca-history"><a accesskey="h" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=history" title="Журнал изменений страницы [h]"><span>История</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-cactions-label" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown vector-menu" id="p-cactions" title="Больше возможностей">
+<input aria-haspopup="true" aria-labelledby="p-cactions-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-cactions" id="p-cactions-checkbox" role="button" type="checkbox"/>
+<label class="vector-menu-heading" id="p-cactions-label">
+<span class="vector-menu-heading-label">Ещё</span>
+</label>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+</ul>
+</div>
+</nav>
+<div class="vector-search-box-vue vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+<h3>Поиск</h3>
+<form action="/w/index.php" class="vector-search-box-form" id="searchform">
+<div class="vector-search-box-inner" data-search-loc="header-navigation" id="simpleSearch">
+<input accesskey="f" aria-label="Искать в Википедии" autocapitalize="sentences" class="vector-search-box-input" id="searchInput" name="search" placeholder="Искать в Википедии" title="Искать в Википедии [f]" type="search"/>
+<input name="title" type="hidden" value="Служебная:Поиск"/>
+<input class="searchButton mw-fallbackSearchButton" id="mw-searchButton" name="fulltext" title="Найти страницы, содержащие указанный текст" type="submit" value="Найти"/>
+<input class="searchButton" id="searchButton" name="go" title="Перейти к странице, имеющей в точности такое название" type="submit" value="Перейти"/>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="vector-legacy-sidebar" id="mw-panel">
+<div id="p-logo" role="banner">
+<a class="mw-wiki-logo" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу"></a>
+</div>
+<nav aria-labelledby="p-navigation-label" class="mw-portlet mw-portlet-navigation vector-menu-portal portal vector-menu" id="p-navigation">
+<h3 class="vector-menu-heading" id="p-navigation-label">
+<span class="vector-menu-heading-label">Навигация</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="n-mainpage-description"><a accesskey="z" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [z]"><span>Заглавная страница</span></a></li><li class="mw-list-item" id="n-content"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5"><span>Содержание</span></a></li><li class="mw-list-item" id="n-featured"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Статьи, считающиеся лучшими статьями проекта"><span>Избранные статьи</span></a></li><li class="mw-list-item" id="n-randompage"><a accesskey="x" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Посмотреть случайно выбранную страницу [x]"><span>Случайная статья</span></a></li><li class="mw-list-item" id="n-currentevents"><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Статьи о текущих событиях в мире"><span>Текущие события</span></a></li><li class="mw-list-item" id="n-sitesupport"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=ru.wikipedia.org&amp;uselang=ru" title="Поддержите нас"><span>Пожертвовать</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-participation-label" class="mw-portlet mw-portlet-participation vector-menu-portal portal vector-menu" id="p-participation">
+<h3 class="vector-menu-heading" id="p-participation-label">
+<span class="vector-menu-heading-label">Участие</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="n-bug_in_article"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85" title="Сообщить об ошибке в этой статье"><span>Сообщить об ошибке</span></a></li><li class="mw-list-item" id="n-introduction"><a href="/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5"><span>Как править статьи</span></a></li><li class="mw-list-item" id="n-portal"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="О проекте, о том, чем здесь можно заниматься, а также — где что находится"><span>Сообщество</span></a></li><li class="mw-list-item" id="n-forum"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC" title="Форум участников Википедии"><span>Форум</span></a></li><li class="mw-list-item" id="n-help"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Место расположения Справки"><span>Справка</span></a></li><li class="mw-list-item" id="n-recentchanges"><a accesskey="r" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8" title="Список последних изменений [r]"><span>Свежие правки</span></a></li><li class="mw-list-item" id="n-newpages"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список недавно созданных страниц"><span>Новые страницы</span></a></li><li class="mw-list-item" id="n-specialpages"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B"><span>Служебные страницы</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-tb-label" class="mw-portlet mw-portlet-tb vector-menu-portal portal vector-menu" id="p-tb">
+<h3 class="vector-menu-heading" id="p-tb-label">
+<span class="vector-menu-heading-label">Инструменты</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="t-whatlinkshere"><a accesskey="j" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D1%81%D1%8E%D0%B4%D0%B0/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0" title="Список всех страниц, ссылающихся на данную [j]"><span>Ссылки сюда</span></a></li><li class="mw-list-item" id="t-recentchangeslinked"><a accesskey="k" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0" rel="nofollow" title="Последние изменения в страницах, на которые ссылается эта страница [k]"><span>Связанные правки</span></a></li><li class="mw-list-item" id="t-permalink"><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;oldid=140785278" title="Постоянная ссылка на эту версию страницы"><span>Постоянная ссылка</span></a></li><li class="mw-list-item" id="t-info"><a href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=info" title="Подробнее об этой странице"><span>Сведения о странице</span></a></li><li class="mw-list-item" id="t-cite"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A6%D0%B8%D1%82%D0%B0%D1%82%D0%B0&amp;page=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;id=140785278&amp;wpFormIdentifier=titleform" title="Информация о том, как цитировать эту страницу"><span>Цитировать страницу</span></a></li><li class="mw-list-item" id="t-urlshortener"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:UrlShortener&amp;url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%2597%25D0%25B0%25D0%25B4%25D0%25B0%25D1%2587%25D0%25B0_%25D0%25A0%25D0%25B5%25D0%25B3%25D0%25B8%25D0%25BE%25D0%25BC%25D0%25BE%25D0%25BD%25D1%2582%25D0%25B0%25D0%25BD%25D0%25B0_%25D0%25BE_%25D0%25BC%25D0%25B0%25D0%25BA%25D1%2581%25D0%25B8%25D0%25BC%25D0%25B8%25D0%25B7%25D0%25B0%25D1%2586%25D0%25B8%25D0%25B8_%25D1%2583%25D0%25B3%25D0%25BB%25D0%25B0"><span>Получить короткий URL</span></a></li><li class="mw-list-item" id="t-urlshortener-qrcode"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:QrCode&amp;url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%2597%25D0%25B0%25D0%25B4%25D0%25B0%25D1%2587%25D0%25B0_%25D0%25A0%25D0%25B5%25D0%25B3%25D0%25B8%25D0%25BE%25D0%25BC%25D0%25BE%25D0%25BD%25D1%2582%25D0%25B0%25D0%25BD%25D0%25B0_%25D0%25BE_%25D0%25BC%25D0%25B0%25D0%25BA%25D1%2581%25D0%25B8%25D0%25BC%25D0%25B8%25D0%25B7%25D0%25B0%25D1%2586%25D0%25B8%25D0%25B8_%25D1%2583%25D0%25B3%25D0%25BB%25D0%25B0"><span>Скачать QR-код</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-coll-print_export-label" class="mw-portlet mw-portlet-coll-print_export vector-menu-portal portal vector-menu" id="p-coll-print_export">
+<h3 class="vector-menu-heading" id="p-coll-print_export-label">
+<span class="vector-menu-heading-label">Печать/экспорт</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="coll-download-as-rl"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:DownloadAsPdf&amp;page=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;action=show-download-screen" title="Скачать эту страницу как файл PDF"><span>Скачать как PDF</span></a></li><li class="mw-list-item" id="t-print"><a accesskey="p" href="/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;printable=yes" title="Версия этой страницы для печати [p]"><span>Версия для печати</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-wikibase-otherprojects-label" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu-portal portal vector-menu" id="p-wikibase-otherprojects">
+<h3 class="vector-menu-heading" id="p-wikibase-otherprojects-label">
+<span class="vector-menu-heading-label">В других проектах</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item" id="t-wikibase"><a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q7308957" title="Ссылка на связанный элемент репозитория данных [g]"><span>Элемент Викиданных</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-lang-label" class="mw-portlet mw-portlet-lang vector-menu-portal portal vector-menu" id="p-lang">
+<h3 class="vector-menu-heading" id="p-lang-label">
+<span class="vector-menu-heading-label">На других языках</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="interlanguage-link interwiki-en mw-list-item"><a class="interlanguage-link-target" data-language-autonym="English" data-language-local-name="английский" data-title="Regiomontanus' angle maximization problem" href="https://en.wikipedia.org/wiki/Regiomontanus%27_angle_maximization_problem" hreflang="en" lang="en" title="Regiomontanus' angle maximization problem — английский"><span>English</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="индонезийский" data-title="Masalah maksimisasi sudut Regiomontanus" href="https://id.wikipedia.org/wiki/Masalah_maksimisasi_sudut_Regiomontanus" hreflang="id" lang="id" title="Masalah maksimisasi sudut Regiomontanus — индонезийский"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="итальянский" data-title="Problema di Regiomontano" href="https://it.wikipedia.org/wiki/Problema_di_Regiomontano" hreflang="it" lang="it" title="Problema di Regiomontano — итальянский"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="японский" data-title="レギオモンタヌスの問題" href="https://ja.wikipedia.org/wiki/%E3%83%AC%E3%82%AE%E3%82%AA%E3%83%A2%E3%83%B3%E3%82%BF%E3%83%8C%E3%82%B9%E3%81%AE%E5%95%8F%E9%A1%8C" hreflang="ja" lang="ja" title="レギオモンタヌスの問題 — японский"><span>日本語</span></a></li>
+</ul>
+<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q7308957#sitelinks-wikipedia" title="Править ссылки на другие языки">Править ссылки</a></span></div>
+</div>
+</nav>
+</div>
+</div>
+<footer class="mw-footer" id="footer">
+<ul id="footer-info">
+<li id="footer-info-lastmod"> Эта страница в последний раз была отредактирована 13 октября 2024 в 16:33.</li>
+<li id="footer-info-copyright">Текст доступен по <a class="external text" href="//creativecommons.org/licenses/by-sa/4.0/deed.ru" rel="nofollow">лицензии Creative Commons «С указанием авторства — С сохранением условий» (CC BY-SA)</a>; в отдельных случаях могут действовать дополнительные условия.
+<span class="noprint">Подробнее см. <a class="external text" href="https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ru">Условия использования</a>.</span><br/>
+Wikipedia® — зарегистрированный товарный знак некоммерческой организации <a class="external text" href="https://wikimediafoundation.org/ru/" rel="nofollow">«Фонд Викимедиа» (Wikimedia Foundation, Inc.)</a></li>
+</ul>
+<ul id="footer-places">
+<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ru">Политика конфиденциальности</a></li>
+<li id="footer-places-about"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">Описание Википедии</a></li>
+<li id="footer-places-disclaimers"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Отказ от ответственности</a></li>
+<li id="footer-places-contact"><a href="//ru.wikipedia.org/wiki/Википедия:Контакты">Свяжитесь с нами</a></li>
+<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct/ru">Кодекс поведения</a></li>
+<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Разработчики</a></li>
+<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ru.wikipedia.org">Статистика</a></li>
+<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Заявление о куки</a></li>
+<li id="footer-places-mobileview"><a class="noprint stopMobileRedirectToggle" href="//ru.m.wikipedia.org/w/index.php?title=%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0_%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%BD%D0%B0_%D0%BE_%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D0%B8_%D1%83%D0%B3%D0%BB%D0%B0&amp;mobileaction=toggle_view_mobile">Мобильная версия</a></li>
+</ul>
+<ul class="noprint" id="footer-icons">
+<li id="footer-copyrightico"><a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/"><picture><source height="29" media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84"/><img alt="Wikimedia Foundation" height="25" lang="en" loading="lazy" src="/static/images/footer/wikimedia.svg" width="25"/></picture></a></li>
+<li id="footer-poweredbyico"><a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/"><picture><source height="31" media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88"/><img alt="Powered by MediaWiki" height="25" lang="en" loading="lazy" src="/w/resources/assets/mediawiki_compact.svg" width="25"/></picture></a></li>
+</ul>
+</footer>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet vector-menu-portal portal" id="p-dock-bottom">
+<ul>
+</ul>
+</div>
+
+
+</body>
+</html>

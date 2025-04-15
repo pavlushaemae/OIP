@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+
+<html class="client-nojs" dir="ltr" lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>Медиана треугольника — Википедия</title>
+
+
+
+
+<meta content="" name="ResourceLoaderDynamicStyles"/>
+
+
+<noscript></noscript>
+<meta content="MediaWiki 1.44.0-wmf.20" name="generator"/>
+<meta content="origin" name="referrer"/>
+<meta content="origin-when-cross-origin" name="referrer"/>
+<meta content="max-image-preview:standard" name="robots"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Triangle.Centroid.svg/1200px-Triangle.Centroid.svg.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="970" property="og:image:height"/>
+<meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Triangle.Centroid.svg/800px-Triangle.Centroid.svg.png" property="og:image"/>
+<meta content="800" property="og:image:width"/>
+<meta content="647" property="og:image:height"/>
+<meta content="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Triangle.Centroid.svg/640px-Triangle.Centroid.svg.png" property="og:image"/>
+<meta content="640" property="og:image:width"/>
+<meta content="517" property="og:image:height"/>
+<meta content="width=1120" name="viewport"/>
+<meta content="Медиана треугольника — Википедия" property="og:title"/>
+<meta content="website" property="og:type"/>
+<link href="//upload.wikimedia.org" rel="preconnect"/>
+<link href="//ru.m.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" media="only screen and (max-width: 640px)" rel="alternate"/>
+<link href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit" rel="alternate" title="Править" type="application/x-wiki"/>
+<link href="/static/apple-touch/wikipedia.png" rel="apple-touch-icon"/>
+<link href="/static/favicon/wikipedia.ico" rel="icon"/>
+<link href="/w/rest.php/v1/search" rel="search" title="Википедия (ru)" type="application/opensearchdescription+xml"/>
+<link href="//ru.wikipedia.org/w/api.php?action=rsd" rel="EditURI" type="application/rsd+xml"/>
+<link href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" rel="canonical"/>
+<link href="https://creativecommons.org/licenses/by-sa/4.0/deed.ru" rel="license"/>
+<link href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8&amp;feed=atom" rel="alternate" title="Википедия — Atom-лента" type="application/atom+xml"/>
+<link href="//meta.wikimedia.org" rel="dns-prefetch">
+<link href="login.wikimedia.org" rel="dns-prefetch"/>
+</link></head>
+<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Медиана_треугольника rootpage-Медиана_треугольника skin-vector action-view"><div class="noprint" id="mw-page-base"></div>
+<div class="noprint" id="mw-head-base"></div>
+<div class="mw-body" id="content" role="main">
+<a id="top"></a>
+<div id="siteNotice"><!-- CentralNotice --></div>
+<div class="mw-indicators">
+</div>
+<h1 class="firstHeading mw-first-heading" id="firstHeading"><span class="mw-page-title-main">Медиана треугольника</span></h1>
+<div class="vector-body" id="bodyContent">
+<div class="noprint" id="siteSub">Материал из Википедии — свободной энциклопедии</div>
+<div id="contentSub"><div id="mw-content-subtitle"><div id="mw-fr-revision-messages"><div class="cdx-message mw-fr-message-box cdx-message--block cdx-message--notice mw-fr-basic mw-fr-draft-not-synced plainlinks noprint"><span class="cdx-message__icon"></span><div class="cdx-message__content">Текущая версия страницы пока <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0_%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9/%D0%9F%D0%BE%D1%8F%D1%81%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B4%D0%BB%D1%8F_%D1%87%D0%B8%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9" title="Википедия:Проверка статей/Пояснение для читателей">не проверялась</a> опытными участниками и может значительно отличаться от <a class="external text" href="https://ru.wikipedia.org/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;stable=1">версии, проверенной 3 августа 2024 года</a>; проверки требуют <a class="external text" href="https://ru.wikipedia.org/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;oldid=139390520&amp;diff=cur&amp;diffonly=0">7 правок</a>.</div></div></div></div></div>
+<div id="contentSub2"></div>
+<div id="jump-to-nav"></div>
+<a class="mw-jump-link" href="#mw-head">Перейти к навигации</a>
+<a class="mw-jump-link" href="#searchInput">Перейти к поиску</a>
+<div class="mw-body-content" id="mw-content-text"><div class="mw-content-ltr mw-parser-output" dir="ltr" lang="ru"><div class="hatnote navigation-not-searchable noprint dabhide" role="note">У этого термина существуют и другие значения, см. <a class="mw-disambig" href="/wiki/%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0" title="Медиана">Медиана</a>.</div>
+<figure class="mw-default-size mw-halign-right" typeof="mw:File/Thumb"><a class="mw-file-description" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Triangle.Centroid.svg"><img class="mw-file-element" data-file-height="654" data-file-width="809" decoding="async" height="178" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Triangle.Centroid.svg/220px-Triangle.Centroid.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Triangle.Centroid.svg/330px-Triangle.Centroid.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Triangle.Centroid.svg/440px-Triangle.Centroid.svg.png 2x" width="220"/></a><figcaption>Треугольник и его медианы.</figcaption></figure>
+<p><b>Медиа́на треуго́льника</b> (<a href="/wiki/%D0%9B%D0%B0%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Латинский язык">лат.</a> <span lang="la" style="font-style:italic;">mediāna</span> — средняя) ― <a href="/wiki/%D0%9E%D1%82%D1%80%D0%B5%D0%B7%D0%BE%D0%BA" title="Отрезок">отрезок</a> в треугольнике, соединяющий вершину <a href="/wiki/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Треугольник">треугольника</a> с серединой стороны, противоположной этой вершине.
+Иногда медианой называют также <a href="/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%B0%D1%8F" title="Прямая">прямую</a>, содержащую этот отрезок, а иногда длину этого отрезка.
+Точка пересечения медианы со стороной треугольника называется <b>основанием медианы</b>.
+</p><p>Если <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle ABC}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>A</mi>
+<mi>B</mi>
+<mi>C</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle ABC}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle ABC}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5e55b44cfd965fbdc7a328d5db8a35a619db0971" style="vertical-align: -0.338ex; width:5.273ex; height:2.176ex;"/></span> ― треугольник, и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle a=BC}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>a</mi>
+<mo>=</mo>
+<mi>B</mi>
+<mi>C</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle a=BC}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle a=BC}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/944ad306da7031c91d6293d105e1fcc6fdb87b47" style="vertical-align: -0.338ex; width:7.859ex; height:2.176ex;"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle b=AC}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>b</mi>
+<mo>=</mo>
+<mi>A</mi>
+<mi>C</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle b=AC}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle b=AC}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/22caff6c526cb229a92ef0d77b0ce304dd4c3f43" style="vertical-align: -0.338ex; width:7.605ex; height:2.176ex;"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle c=AB}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>c</mi>
+<mo>=</mo>
+<mi>A</mi>
+<mi>B</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle c=AB}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle c=AB}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aad098a7276298d55c8196858f052aa1a0fa5da7" style="vertical-align: -0.338ex; width:7.612ex; height:2.176ex;"/></span> ― длины сторон (или просто стороны), то медианы, проведённые соответственно из вершин <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle A}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>A</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle A}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle B}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>B</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle B}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle B}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/47136aad860d145f75f3eed3022df827cee94d7a" style="vertical-align: -0.338ex; width:1.764ex; height:2.176ex;"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle C}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>C</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle C}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle C}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4fc55753007cd3c18576f7933f6f089196732029" style="vertical-align: -0.338ex; width:1.766ex; height:2.176ex;"/></span> к сторонам <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle a}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>a</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle a}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle b}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>b</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle b}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle c}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>c</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle c}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle c}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86a67b81c2de995bd608d5b2df50cd8cd7d92455" style="vertical-align: -0.338ex; width:1.007ex; height:1.676ex;"/></span>, обычно обозначаются <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{a}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+</msub>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{a}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{a}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aefb2f5b0650af85e06c339f57a7f506978824a1" style="vertical-align: -0.671ex; width:3.142ex; height:2.009ex;"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{b}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+</msub>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{b}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{b}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/017c5131e6f8dab3b3bb57775a10d37c7a909bd8" style="vertical-align: -0.671ex; width:2.978ex; height:2.009ex;"/></span> и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{c}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+</msub>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{c}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{c}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/81125728206d5d371eabf428b75f6abdd7faa5f4" style="vertical-align: -0.671ex; width:2.985ex; height:2.009ex;"/></span>.
+</p>
+<div aria-labelledby="mw-toc-heading" class="toc" id="toc" role="navigation"><input class="toctogglecheckbox" id="toctogglecheckbox" role="button" style="display:none" type="checkbox"/><div class="toctitle" dir="ltr" lang="ru"><h2 id="mw-toc-heading">Содержание</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Связанные_определения"><span class="tocnumber">1</span> <span class="toctext">Связанные определения</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Свойства"><span class="tocnumber">2</span> <span class="toctext">Свойства</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Основное_свойство"><span class="tocnumber">2.1</span> <span class="toctext">Основное свойство</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Свойства_медиан_равнобедренного_треугольника"><span class="tocnumber">2.2</span> <span class="toctext">Свойства медиан равнобедренного треугольника</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Свойства_оснований_медиан"><span class="tocnumber">2.3</span> <span class="toctext">Свойства оснований медиан</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Другие_свойства"><span class="tocnumber">2.4</span> <span class="toctext">Другие свойства</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Основные_соотношения"><span class="tocnumber">3</span> <span class="toctext">Основные соотношения</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Вариации_и_обобщение"><span class="tocnumber">4</span> <span class="toctext">Вариации и обобщение</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#См._также"><span class="tocnumber">5</span> <span class="toctext">См. также</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Примечания"><span class="tocnumber">6</span> <span class="toctext">Примечания</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Литература"><span class="tocnumber">7</span> <span class="toctext">Литература</span></a></li>
+</ul>
+</div>
+<div class="mw-heading mw-heading2"><h2 id="Связанные_определения"><span id=".D0.A1.D0.B2.D1.8F.D0.B7.D0.B0.D0.BD.D0.BD.D1.8B.D0.B5_.D0.BE.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D1.8F"></span>Связанные определения</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=1" title="Редактировать раздел «Связанные определения»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=1" title="Редактировать код раздела «Связанные определения»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Точка пересечения медиан делит каждую медиану на два отрезка.
+Отрезок от вершины до точки пересечения называется <i>предмедианой</i>, а отрезок от точки пересечения до противоположной стороны <i>постмедианой</i><sup class="reference" id="cite_ref-1"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>.
+В частности можно сказать, что <i>в любом треугольнике отношение предмедианы к постмедиане равно двум</i>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Свойства"><span id=".D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0"></span>Свойства</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=2" title="Редактировать раздел «Свойства»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=2" title="Редактировать код раздела «Свойства»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="mw-heading mw-heading3"><h3 id="Основное_свойство"><span id=".D0.9E.D1.81.D0.BD.D0.BE.D0.B2.D0.BD.D0.BE.D0.B5_.D1.81.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.BE"></span>Основное свойство</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=3" title="Редактировать раздел «Основное свойство»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=3" title="Редактировать код раздела «Основное свойство»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Все три медианы треугольника пересекаются в одной <a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_(%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F)" title="Точка (геометрия)">точке</a>, которая называется <a class="mw-redirect" href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B8%D0%B4" title="Центроид">центроидом</a> или <a href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D0%BC%D0%B0%D1%81%D1%81" title="Центр масс">центром тяжести</a> треугольника, и делятся этой точкой на две части в отношении 2:1, считая от вершины.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Свойства_медиан_равнобедренного_треугольника"><span id=".D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0_.D0.BC.D0.B5.D0.B4.D0.B8.D0.B0.D0.BD_.D1.80.D0.B0.D0.B2.D0.BD.D0.BE.D0.B1.D0.B5.D0.B4.D1.80.D0.B5.D0.BD.D0.BD.D0.BE.D0.B3.D0.BE_.D1.82.D1.80.D0.B5.D1.83.D0.B3.D0.BE.D0.BB.D1.8C.D0.BD.D0.B8.D0.BA.D0.B0"></span>Свойства медиан <a href="/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%B1%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Равнобедренный треугольник">равнобедренного треугольника</a></h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=4" title="Редактировать раздел «Свойства медиан равнобедренного треугольника»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=4" title="Редактировать код раздела «Свойства медиан равнобедренного треугольника»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>В <a href="/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%B1%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Равнобедренный треугольник">равнобедренном треугольнике</a> две медианы, проведенные к равным сторонам треугольника, равны, а третья медиана одновременно является <a href="/wiki/%D0%91%D0%B8%D1%81%D1%81%D0%B5%D0%BA%D1%82%D1%80%D0%B8%D1%81%D0%B0" title="Биссектриса">биссектрисой</a> и <a href="/wiki/%D0%92%D1%8B%D1%81%D0%BE%D1%82%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Высота треугольника">высотой</a>. Верно и обратное: если в треугольнике две медианы равны, то треугольник — равнобедренный, а третья медиана одновременно является биссектрисой и высотой угла при своей вершине.
+</p><p>У равностороннего треугольника все три медианы равны.
+</p><p>Если медианы равнобедренного треугольника, проведённые к боковым сторонам, пересекаются под прямым углом, то косинусы углов при основании этого треугольника равны <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle {\dfrac {1}{\sqrt {10}}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mfrac>
+<mn>1</mn>
+<msqrt>
+<mn>10</mn>
+</msqrt>
+</mfrac>
+</mstyle>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle {\dfrac {1}{\sqrt {10}}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle {\dfrac {1}{\sqrt {10}}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ddee02011abbfa5ed28465211505d7505c7bf353" style="vertical-align: -2.838ex; width:5.097ex; height:6.176ex;"/></span>, а косинус противоположного основанию угла равен <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle {\dfrac {4}{5}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mfrac>
+<mn>4</mn>
+<mn>5</mn>
+</mfrac>
+</mstyle>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle {\dfrac {4}{5}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle {\dfrac {4}{5}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2de6820c9d6fc829643808c2f59e3ccdd6f4837a" style="vertical-align: -1.838ex; width:1.999ex; height:5.176ex;"/></span>.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Свойства_оснований_медиан"><span id=".D0.A1.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0_.D0.BE.D1.81.D0.BD.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B9_.D0.BC.D0.B5.D0.B4.D0.B8.D0.B0.D0.BD"></span>Свойства оснований медиан</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=5" title="Редактировать раздел «Свойства оснований медиан»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=5" title="Редактировать код раздела «Свойства оснований медиан»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a class="mw-file-description" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Triangle.NinePointCircle.svg"><img class="mw-file-element" data-file-height="147" data-file-width="182" decoding="async" height="178" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Triangle.NinePointCircle.svg/220px-Triangle.NinePointCircle.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Triangle.NinePointCircle.svg/330px-Triangle.NinePointCircle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Triangle.NinePointCircle.svg/440px-Triangle.NinePointCircle.svg.png 2x" width="220"/></a><figcaption>Окружность девяти точек</figcaption></figure>
+<ul><li><b>Теорема <a href="/wiki/%D0%AD%D0%B9%D0%BB%D0%B5%D1%80,_%D0%9B%D0%B5%D0%BE%D0%BD%D0%B0%D1%80%D0%B4" title="Эйлер, Леонард">Эйлера</a> для <a href="/wiki/%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B4%D0%B5%D0%B2%D1%8F%D1%82%D0%B8_%D1%82%D0%BE%D1%87%D0%B5%D0%BA" title="Окружность девяти точек">окружности девяти точек</a></b>: основания трёх <a href="/wiki/%D0%92%D1%8B%D1%81%D0%BE%D1%82%D0%B0_(%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F)" title="Высота (геометрия)">высот</a> произвольного треугольника, середины трёх его сторон (<i>основания его медиан</i>) и середины трёх отрезков, соединяющих его вершины с <a href="/wiki/%D0%9E%D1%80%D1%82%D0%BE%D1%86%D0%B5%D0%BD%D1%82%D1%80" title="Ортоцентр">ортоцентром</a>, все лежат на одной окружности (так называемой <i>окружности девяти точек</i>).</li>
+<li>Отрезок, проведенный через <i>основания</i> двух любых медиан треугольника, является его <i><a href="/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F" title="Средняя линия">средней линией</a></i>. Средняя линия треугольника всегда параллельна той стороне треугольника, с которой она не имеет общих точек.
+<ul><li>Следствие (<a class="mw-redirect" href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A4%D0%B0%D0%BB%D0%B5%D1%81%D0%B0" title="Теорема Фалеса">теорема Фалеса</a> о <i>параллельных</i> отрезках). Средняя линия треугольника равна половине длины той стороны треугольника, которой она параллельна.</li></ul></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D1%80%D0%BA%D0%B5%D0%BC,_%D0%9E%D0%BB%D1%80%D0%B8" title="Теркем, Олри">Теркем</a> доказал <a class="mw-redirect" href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A2%D0%B5%D1%80%D0%BA%D0%B5%D0%BC%D0%B0" title="Теорема Теркема">теорему Теркема</a><sup class="reference" id="cite_ref-2"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup>. Она утверждает, что если окружность девяти точек пересекает стороны треугольника или их продолжения в 3 парах точек (в 3 основаниях соответственно высот и медиан), являющихся основаниями 3 пар чевиан, то, если 3 чевианы для 3 из этих оснований пересекаются в 1 точке (например 3 медианы пересекаются в 1 точке), то 3 чевианы для 3 других оснований также пересекаются в 1 точке (то есть 3 высоты также обязаны пересечься в 1 точке).</li></ul>
+<div class="mw-heading mw-heading3"><h3 id="Другие_свойства"><span id=".D0.94.D1.80.D1.83.D0.B3.D0.B8.D0.B5_.D1.81.D0.B2.D0.BE.D0.B9.D1.81.D1.82.D0.B2.D0.B0"></span>Другие свойства</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=6" title="Редактировать раздел «Другие свойства»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=6" title="Редактировать код раздела «Другие свойства»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li>Если треугольник <i>разносторонний</i> (<i>неравнобедренный</i>), то его <a href="/wiki/%D0%91%D0%B8%D1%81%D1%81%D0%B5%D0%BA%D1%82%D1%80%D0%B8%D1%81%D0%B0" title="Биссектриса">биссектриса</a>, проведённая из любой вершины, лежит между медианой и <a href="/wiki/%D0%92%D1%8B%D1%81%D0%BE%D1%82%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Высота треугольника">высотой</a>, проведёнными из той же вершины.</li>
+<li>Медиана разбивает треугольник на два <a class="mw-redirect" href="/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B5_%D1%84%D0%B8%D0%B3%D1%83%D1%80%D1%8B" title="Равновеликие фигуры">равновеликих</a> (по площади) треугольника.</li>
+<li>Медиана делит пополам любой отрезок, параллельный стороне, к которой проведена эта медиана.</li>
+<li>Треугольник делится тремя медианами на шесть равновеликих треугольников. Центры описанных окружностей этих шести треугольников лежат на одной окружности, которая называется <b><a href="/wiki/%D0%9E%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%9B%D0%B0%D0%BC%D1%83%D0%BD%D0%B0" title="Окружность Ламуна">окружностью Ламуна</a></b>.</li>
+<li>Из отрезков, образующих медианы, можно составить треугольник, площадь которого будет равна 3/4 от всего треугольника. Длины медиан удовлетворяют <a href="/wiki/%D0%9D%D0%B5%D1%80%D0%B0%D0%B2%D0%B5%D0%BD%D1%81%D1%82%D0%B2%D0%BE_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Неравенство треугольника">неравенству треугольника</a>.</li>
+<li>В <a href="/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Прямоугольный треугольник">прямоугольном треугольнике</a> медиана, проведённая из вершины с прямым углом, равняется половине гипотенузы.</li>
+<li>Большей стороне треугольника соответствует меньшая медиана.</li>
+<li>Отрезок прямой, симметричный или <i><a href="/wiki/%D0%98%D0%B7%D0%BE%D0%B3%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%81%D0%BE%D0%BF%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5" title="Изогональное сопряжение">изогонально сопряжённый</a></i> внутренней медиане относительно внутренней биссектрисы, называется <a href="/wiki/%D0%A1%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0" title="Симедиана">симедианой</a> треугольника. Три <i>симедианы</i> проходят через одну точку — <b><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_%D0%9B%D0%B5%D0%BC%D1%83%D0%B0%D0%BD%D0%B0" title="Точка Лемуана">точку Лемуана</a></b>.</li>
+<li>Медиана угла треугольника <i><a href="/wiki/%D0%98%D0%B7%D0%BE%D1%82%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%BE%D0%BF%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5" title="Изотомическое сопряжение">изотомически сопряжена</a></i> самой себе.</li></ul>
+<figure typeof="mw:File/Thumb"><a class="mw-file-description" href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Line_at_infinity_ru.svg"><img class="mw-file-element" data-file-height="1020" data-file-width="1183" decoding="async" height="259" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/Line_at_infinity_ru.svg/300px-Line_at_infinity_ru.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/Line_at_infinity_ru.svg/450px-Line_at_infinity_ru.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/16/Line_at_infinity_ru.svg/600px-Line_at_infinity_ru.svg.png 2x" width="300"/></a><figcaption><i>Бесконечно удаленная прямая</i> — трилинейная поляра <i><a class="mw-redirect" href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B8%D0%B4" title="Центроид">центроида</a></i></figcaption></figure>
+<ul><li><a href="/wiki/%D0%A2%D1%80%D0%B8%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D0%BB%D1%8F%D1%80%D1%8B_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Трилинейные поляры треугольника">Трилинейная поляра</a> <i><a class="mw-redirect" href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B8%D0%B4" title="Центроид">центроида</a></i> (точки пересечения трех медиан) — <b>бесконечно удаленная прямая</b> (см. рис.).</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Основные_соотношения"><span id=".D0.9E.D1.81.D0.BD.D0.BE.D0.B2.D0.BD.D1.8B.D0.B5_.D1.81.D0.BE.D0.BE.D1.82.D0.BD.D0.BE.D1.88.D0.B5.D0.BD.D0.B8.D1.8F"></span>Основные соотношения</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=7" title="Редактировать раздел «Основные соотношения»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=7" title="Редактировать код раздела «Основные соотношения»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Чтобы вычислить длину медианы, когда известны длины сторон треугольника, применяется <a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%90%D0%BF%D0%BE%D0%BB%D0%BB%D0%BE%D0%BD%D0%B8%D1%8F" title="Теорема Аполлония">теорема Аполлония</a> (выводится через <a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A1%D1%82%D1%8E%D0%B0%D1%80%D1%82%D0%B0" title="Теорема Стюарта">теорему Стюарта</a> или достроением до <a href="/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC" title="Параллелограмм">параллелограмма</a> и использованием равенства в <a href="/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC" title="Параллелограмм">параллелограмме</a> суммы квадратов сторон и суммы квадратов диагоналей):
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{a}={\dfrac {1}{2}}{\sqrt {2b^{2}+2c^{2}-a^{2}}},}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+</msub>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mn>2</mn>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</msqrt>
+</mrow>
+<mo>,</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{a}={\dfrac {1}{2}}{\sqrt {2b^{2}+2c^{2}-a^{2}}},}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{a}={\dfrac {1}{2}}{\sqrt {2b^{2}+2c^{2}-a^{2}}},}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0c5c40493b305460d845472bfb880760560d3da6" style="vertical-align: -1.838ex; width:25.613ex; height:5.176ex;"/></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{b}={\dfrac {1}{2}}{\sqrt {2a^{2}+2c^{2}-b^{2}}},}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+</msub>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mn>2</mn>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</msqrt>
+</mrow>
+<mo>,</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{b}={\dfrac {1}{2}}{\sqrt {2a^{2}+2c^{2}-b^{2}}},}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{b}={\dfrac {1}{2}}{\sqrt {2a^{2}+2c^{2}-b^{2}}},}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f3b2a941ba088937b5914aa3ffb13efb7934de12" style="vertical-align: -1.838ex; width:25.448ex; height:5.176ex;"/></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{c}={\dfrac {1}{2}}{\sqrt {2a^{2}+2b^{2}-c^{2}}},}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+</msub>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</mstyle>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mn>2</mn>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</msqrt>
+</mrow>
+<mo>,</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{c}={\dfrac {1}{2}}{\sqrt {2a^{2}+2b^{2}-c^{2}}},}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{c}={\dfrac {1}{2}}{\sqrt {2a^{2}+2b^{2}-c^{2}}},}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97db24b6876949cc3a777fa22d07ef0a8a2447c6" style="vertical-align: -1.838ex; width:25.455ex; height:5.176ex;"/></span></dd></dl>
+<dl><dd>где <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{a},\ m_{b},\ m_{c}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+</msub>
+<mo>,</mo>
+<mtext> </mtext>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+</msub>
+<mo>,</mo>
+<mtext> </mtext>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+</msub>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{a},\ m_{b},\ m_{c}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{a},\ m_{b},\ m_{c}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2c75b2a8956f636899076cd0eba0018750766a4a" style="vertical-align: -0.671ex; width:12.334ex; height:2.009ex;"/></span> — медианы к сторонам треугольника <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle a,\ b,\ c}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>a</mi>
+<mo>,</mo>
+<mtext> </mtext>
+<mi>b</mi>
+<mo>,</mo>
+<mtext> </mtext>
+<mi>c</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle a,\ b,\ c}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle a,\ b,\ c}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/926231b596760e42942c99851b00fa6643dff73e" style="vertical-align: -0.671ex; width:6.463ex; height:2.509ex;"/></span> соответственно.</dd></dl>
+<p>В частности, сумма квадратов медиан произвольного треугольника составляет 3/4 от суммы квадратов его сторон:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{a}^{2}+m_{b}^{2}+m_{c}^{2}={\frac {3}{4}}(a^{2}+b^{2}+c^{2})}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo stretchy="false">(</mo>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo stretchy="false">)</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{a}^{2}+m_{b}^{2}+m_{c}^{2}={\frac {3}{4}}(a^{2}+b^{2}+c^{2})}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{a}^{2}+m_{b}^{2}+m_{c}^{2}={\frac {3}{4}}(a^{2}+b^{2}+c^{2})}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/14780905b7db5ded792c5ae909ec3f5bb3437295" style="vertical-align: -1.838ex; width:33.996ex; height:5.176ex;"/></span>.</dd></dl>
+<p>Обратно, можно выразить длину произвольной стороны треугольника через медианы:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle a={\frac {2}{3}}{\sqrt {-m_{a}^{2}+2m_{b}^{2}+2m_{c}^{2}}}={\sqrt {2(b^{2}+c^{2})-4m_{a}^{2}}}={\sqrt {{\frac {b^{2}}{2}}-c^{2}+2m_{b}^{2}}}={\sqrt {{\frac {c^{2}}{2}}-b^{2}+2m_{c}^{2}}},}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>a</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mo>−<!-- − --></mo>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mn>2</mn>
+<mo stretchy="false">(</mo>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo stretchy="false">)</mo>
+<mo>−<!-- − --></mo>
+<mn>4</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>,</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle a={\frac {2}{3}}{\sqrt {-m_{a}^{2}+2m_{b}^{2}+2m_{c}^{2}}}={\sqrt {2(b^{2}+c^{2})-4m_{a}^{2}}}={\sqrt {{\frac {b^{2}}{2}}-c^{2}+2m_{b}^{2}}}={\sqrt {{\frac {c^{2}}{2}}-b^{2}+2m_{c}^{2}}},}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle a={\frac {2}{3}}{\sqrt {-m_{a}^{2}+2m_{b}^{2}+2m_{c}^{2}}}={\sqrt {2(b^{2}+c^{2})-4m_{a}^{2}}}={\sqrt {{\frac {b^{2}}{2}}-c^{2}+2m_{b}^{2}}}={\sqrt {{\frac {c^{2}}{2}}-b^{2}+2m_{c}^{2}}},}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8e7a0749baf75753a4afdb681c9a672a040caf3b" style="vertical-align: -2.171ex; width:91.553ex; height:6.176ex;"/></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle b={\frac {2}{3}}{\sqrt {-m_{b}^{2}+2m_{a}^{2}+2m_{c}^{2}}}={\sqrt {2(a^{2}+c^{2})-4m_{b}^{2}}}={\sqrt {{\frac {a^{2}}{2}}-c^{2}+2m_{a}^{2}}}={\sqrt {{\frac {c^{2}}{2}}-a^{2}+2m_{c}^{2}}},}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>b</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mo>−<!-- − --></mo>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mn>2</mn>
+<mo stretchy="false">(</mo>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo stretchy="false">)</mo>
+<mo>−<!-- − --></mo>
+<mn>4</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<msup>
+<mi>c</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>,</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle b={\frac {2}{3}}{\sqrt {-m_{b}^{2}+2m_{a}^{2}+2m_{c}^{2}}}={\sqrt {2(a^{2}+c^{2})-4m_{b}^{2}}}={\sqrt {{\frac {a^{2}}{2}}-c^{2}+2m_{a}^{2}}}={\sqrt {{\frac {c^{2}}{2}}-a^{2}+2m_{c}^{2}}},}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle b={\frac {2}{3}}{\sqrt {-m_{b}^{2}+2m_{a}^{2}+2m_{c}^{2}}}={\sqrt {2(a^{2}+c^{2})-4m_{b}^{2}}}={\sqrt {{\frac {a^{2}}{2}}-c^{2}+2m_{a}^{2}}}={\sqrt {{\frac {c^{2}}{2}}-a^{2}+2m_{c}^{2}}},}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e468b42b669d30af5bf9465ac10e13de730e2ca0" style="vertical-align: -2.171ex; width:92.018ex; height:6.176ex;"/></span></dd></dl>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle c={\frac {2}{3}}{\sqrt {-m_{c}^{2}+2m_{b}^{2}+2m_{a}^{2}}}={\sqrt {2(b^{2}+a^{2})-4m_{c}^{2}}}={\sqrt {{\frac {b^{2}}{2}}-a^{2}+2m_{b}^{2}}}={\sqrt {{\frac {a^{2}}{2}}-b^{2}+2m_{a}^{2}}},}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>c</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mn>2</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mo>−<!-- − --></mo>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mn>2</mn>
+<mo stretchy="false">(</mo>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo stretchy="false">)</mo>
+<mo>−<!-- − --></mo>
+<mn>4</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>+</mo>
+<mn>2</mn>
+<msubsup>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msubsup>
+</msqrt>
+</mrow>
+<mo>,</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle c={\frac {2}{3}}{\sqrt {-m_{c}^{2}+2m_{b}^{2}+2m_{a}^{2}}}={\sqrt {2(b^{2}+a^{2})-4m_{c}^{2}}}={\sqrt {{\frac {b^{2}}{2}}-a^{2}+2m_{b}^{2}}}={\sqrt {{\frac {a^{2}}{2}}-b^{2}+2m_{a}^{2}}},}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle c={\frac {2}{3}}{\sqrt {-m_{c}^{2}+2m_{b}^{2}+2m_{a}^{2}}}={\sqrt {2(b^{2}+a^{2})-4m_{c}^{2}}}={\sqrt {{\frac {b^{2}}{2}}-a^{2}+2m_{b}^{2}}}={\sqrt {{\frac {a^{2}}{2}}-b^{2}+2m_{a}^{2}}},}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/74bf944f7956a40ca2e5d63950593cc83fa648e5" style="vertical-align: -2.171ex; width:91.999ex; height:6.176ex;"/></span></dd></dl>
+<dl><dd>где <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle m_{a},m_{b},m_{c}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+</msub>
+<mo>,</mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+</msub>
+<mo>,</mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+</msub>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle m_{a},m_{b},m_{c}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle m_{a},m_{b},m_{c}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e74fef7d89411965658c570af790b84004538e2f" style="vertical-align: -0.671ex; width:11.173ex; height:2.009ex;"/></span> — медианы к соответствующим сторонам треугольника, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle a,b,c}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>a</mi>
+<mo>,</mo>
+<mi>b</mi>
+<mo>,</mo>
+<mi>c</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle a,b,c}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle a,b,c}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f13f068df656c1b1911ae9f81628c49a6181194d" style="vertical-align: -0.671ex; width:5.302ex; height:2.509ex;"/></span> — стороны треугольника.</dd></dl>
+<p>Площадь <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle S}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>S</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle S}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle S}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2" style="vertical-align: -0.338ex; width:1.499ex; height:2.176ex;"/></span> любого треугольника, выраженная через длины его медиан:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle S={\frac {4}{3}}{\sqrt {\sigma (\sigma -m_{a})(\sigma -m_{b})(\sigma -m_{c})}},}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>S</mi>
+<mo>=</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mn>4</mn>
+<mn>3</mn>
+</mfrac>
+</mrow>
+<mrow class="MJX-TeXAtom-ORD">
+<msqrt>
+<mi>σ<!-- σ --></mi>
+<mo stretchy="false">(</mo>
+<mi>σ<!-- σ --></mi>
+<mo>−<!-- − --></mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+</msub>
+<mo stretchy="false">)</mo>
+<mo stretchy="false">(</mo>
+<mi>σ<!-- σ --></mi>
+<mo>−<!-- − --></mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+</msub>
+<mo stretchy="false">)</mo>
+<mo stretchy="false">(</mo>
+<mi>σ<!-- σ --></mi>
+<mo>−<!-- − --></mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+</msub>
+<mo stretchy="false">)</mo>
+</msqrt>
+</mrow>
+<mo>,</mo>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle S={\frac {4}{3}}{\sqrt {\sigma (\sigma -m_{a})(\sigma -m_{b})(\sigma -m_{c})}},}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle S={\frac {4}{3}}{\sqrt {\sigma (\sigma -m_{a})(\sigma -m_{b})(\sigma -m_{c})}},}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/705e9eced6d3bdace610c34506349e1db94648bb" style="vertical-align: -1.838ex; width:37.94ex; height:5.176ex;"/></span></dd></dl>
+<dl><dd>где <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \sigma =(m_{a}+m_{b}+m_{c})/2}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>σ<!-- σ --></mi>
+<mo>=</mo>
+<mo stretchy="false">(</mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>a</mi>
+</mrow>
+</msub>
+<mo>+</mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>b</mi>
+</mrow>
+</msub>
+<mo>+</mo>
+<msub>
+<mi>m</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mi>c</mi>
+</mrow>
+</msub>
+<mo stretchy="false">)</mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mo>/</mo>
+</mrow>
+<mn>2</mn>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \sigma =(m_{a}+m_{b}+m_{c})/2}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \sigma =(m_{a}+m_{b}+m_{c})/2}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f86094f47aaadbea9d782a31fefe6bf1efef58c" style="vertical-align: -0.838ex; width:23.348ex; height:2.843ex;"/></span> — полусумма длин медиан.</dd>
+<dd>Углы, образованные между медианой треугольника и его стороной, к которой проведена данная медиана, равны</dd>
+<dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle \operatorname {arccot} {\frac {a^{2}-b^{2}}{4S}},\operatorname {arccot} {\frac {b^{2}-a^{2}}{4S}}}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>arccot</mi>
+<mo>⁡<!-- ⁡ --></mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</mrow>
+<mrow>
+<mn>4</mn>
+<mi>S</mi>
+</mrow>
+</mfrac>
+</mrow>
+<mo>,</mo>
+<mi>arccot</mi>
+<mo>⁡<!-- ⁡ --></mo>
+<mrow class="MJX-TeXAtom-ORD">
+<mfrac>
+<mrow>
+<msup>
+<mi>b</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+<mo>−<!-- − --></mo>
+<msup>
+<mi>a</mi>
+<mrow class="MJX-TeXAtom-ORD">
+<mn>2</mn>
+</mrow>
+</msup>
+</mrow>
+<mrow>
+<mn>4</mn>
+<mi>S</mi>
+</mrow>
+</mfrac>
+</mrow>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle \operatorname {arccot} {\frac {a^{2}-b^{2}}{4S}},\operatorname {arccot} {\frac {b^{2}-a^{2}}{4S}}}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle \operatorname {arccot} {\frac {a^{2}-b^{2}}{4S}},\operatorname {arccot} {\frac {b^{2}-a^{2}}{4S}}}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bfe1faee3eb88836187bf3967688bdf57dfa82e9" style="vertical-align: -2.005ex; width:30.245ex; height:5.843ex;"/></span>,</dd>
+<dd>где <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle S}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>S</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle S}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle S}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2" style="vertical-align: -0.338ex; width:1.499ex; height:2.176ex;"/></span> — площадь данного треугольника, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle a}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>a</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle a}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;"/></span> и <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math alttext="{\displaystyle b}" xmlns="http://www.w3.org/1998/Math/MathML">
+<semantics>
+<mrow class="MJX-TeXAtom-ORD">
+<mstyle displaystyle="true" scriptlevel="0">
+<mi>b</mi>
+</mstyle>
+</mrow>
+<annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+</semantics>
+</math></span><img alt="{\displaystyle b}" aria-hidden="true" class="mwe-math-fallback-image-inline mw-invert skin-invert" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;"/></span> — его стороны с общей вершиной в той точке, из которой проведена данная медиана в треугольнике.</dd></dl>
+<div class="mw-heading mw-heading2"><h2 id="Вариации_и_обобщение"><span id=".D0.92.D0.B0.D1.80.D0.B8.D0.B0.D1.86.D0.B8.D0.B8_.D0.B8_.D0.BE.D0.B1.D0.BE.D0.B1.D1.89.D0.B5.D0.BD.D0.B8.D0.B5"></span>Вариации и обобщение</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=8" title="Редактировать раздел «Вариации и обобщение»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=8" title="Редактировать код раздела «Вариации и обобщение»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/%D0%A7%D0%B5%D0%B2%D0%B8%D0%B0%D0%BD%D0%B0" title="Чевиана">Чевиана</a> — <a href="/wiki/%D0%9E%D1%82%D1%80%D0%B5%D0%B7%D0%BE%D0%BA" title="Отрезок">отрезок</a> в <a href="/wiki/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Треугольник">треугольнике</a>, соединяющий вершину треугольника с точкой на противоположной стороне.</li></ul>
+<div class="mw-heading mw-heading2"><h2 id="См._также"><span id=".D0.A1.D0.BC._.D1.82.D0.B0.D0.BA.D0.B6.D0.B5"></span>См. также</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=9" title="Редактировать раздел «См. также»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=9" title="Редактировать код раздела «См. также»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<style data-mw-deduplicate="TemplateStyles:r141520016">.mw-parser-output .ts-Родственный_проект{background:var(--background-color-neutral-subtle,#f8f9fa);border:1px solid var(--border-color-base,#a2a9b1);font-size:90%;margin:0 0 1em;padding:.4em;max-width:19em;width:19em;line-height:1.5}.mw-parser-output .ts-Родственный_проект th,.mw-parser-output .ts-Родственный_проект td{padding:.2em 0;vertical-align:middle}.mw-parser-output .ts-Родственный_проект th+td{padding-left:.4em}@media(min-width:720px){.mw-parser-output .ts-Родственный_проект{clear:right;float:right;width:19em;margin-left:1em}}</style>
+<table class="metadata plainlinks ts-Родственный_проект noprint ruwikiWikimediaNavigation" role="presentation">
+<tbody><tr>
+<th style="width:10%;"><span class="noviewer" typeof="mw:File"><span><img alt="" class="mw-file-element" data-file-height="30" data-file-width="30" decoding="async" height="24" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/24px-Notification-icon-Wiktionary-logo.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/36px-Notification-icon-Wiktionary-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Notification-icon-Wiktionary-logo.svg/48px-Notification-icon-Wiktionary-logo.svg.png 2x" width="24"/></span></span>
+</th>
+<td>В <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C" title="Викисловарь">Викисловаре</a> есть статья «<span class="wikidict-ref"><b><a class="extiw" href="https://ru.wiktionary.org/wiki/%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0" title="wikt:медиана">медиана</a></b></span>»
+</td></tr></tbody></table>
+<ul><li><a href="/wiki/%D0%91%D0%B8%D1%81%D1%81%D0%B5%D0%BA%D1%82%D1%80%D0%B8%D1%81%D0%B0" title="Биссектриса">Биссектриса</a></li>
+<li><a href="/wiki/%D0%92%D1%8B%D1%81%D0%BE%D1%82%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Высота треугольника">Высота треугольника</a></li>
+<li><a class="mw-redirect" href="/wiki/%D0%98%D0%BD%D1%86%D0%B5%D0%BD%D1%82%D1%80" title="Инцентр">Инцентр</a></li>
+<li><a href="/wiki/%D0%A1%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0" title="Симедиана">Симедиана</a></li>
+<li><a class="mw-redirect" href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B8%D0%B4" title="Центроид">Центроид</a></li>
+<li><a href="/wiki/%D0%A7%D0%B5%D0%B2%D0%B8%D0%B0%D0%BD%D0%B0" title="Чевиана">Чевиана</a></li></ul>
+<div class="mw-heading mw-heading2"><h2 id="Примечания"><span id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.87.D0.B0.D0.BD.D0.B8.D1.8F"></span>Примечания</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=10" title="Редактировать раздел «Примечания»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=10" title="Редактировать код раздела «Примечания»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<div class="reflist columns" style="list-style-type: decimal;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text">Стариков В. Н. 10-е исследование по геометрии (§ До- (пред-)- и пост-чевианы)// Научный рецензируемый электронный журнал МГАУ «Наука и образование». 2020. № 1. 7 с.// <a class="external free" href="http://opusmgau.ru/index.php/see/article/view/" rel="nofollow">http://opusmgau.ru/index.php/see/article/view/</a> <small class="ref-info">(недоступная ссылка)</small> 1604</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><i>Дмитрий Ефремов</i>. <a class="external text" href="http://ilib.mccme.ru/djvu/ngt/ngt.djvu?djvuopts&amp;page=17" rel="nofollow">Новая геометрия треугольника</a> <a class="external text" href="https://web.archive.org/web/20200225055649/http://ilib.mccme.ru/djvu/ngt/ngt.djvu?djvuopts&amp;page=17" rel="nofollow">Архивная копия</a> от 25 февраля 2020 на <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>. — Одесса, 1902. — С. 16.</span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="Литература"><span id=".D0.9B.D0.B8.D1.82.D0.B5.D1.80.D0.B0.D1.82.D1.83.D1.80.D0.B0"></span>Литература</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a class="mw-editsection-visualeditor" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit&amp;section=11" title="Редактировать раздел «Литература»"><span>править</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit&amp;section=11" title="Редактировать код раздела «Литература»"><span>править код</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><i>Ефремов Дм.</i> <a class="external text" href="https://web.archive.org/web/20050302151746/http://www.mccme.ru/free-books/djvu/ngt/index.htm" rel="nofollow">Новая геометрия треугольника</a>, 1902 год.</li></ul>
+<div aria-labelledby="Треугольник" class="navbox" data-name="Треугольник" role="navigation"><table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th class="navbox-title" colspan="2" scope="colgroup"><span class="navbox-gear" style="float:left;text-align:left;width:5em;margin-right:0.5em"><span class="noprint skin-invert-image" typeof="mw:File"><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Перейти к шаблону «Треугольник»"><img alt="Перейти к шаблону «Треугольник»" class="mw-file-element" data-file-height="14" data-file-width="14" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/14px-Wikipedia_interwiki_section_gear_icon.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/21px-Wikipedia_interwiki_section_gear_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/28px-Wikipedia_interwiki_section_gear_icon.svg.png 2x" width="14"/></a></span></span><div id="Треугольник" style="font-size:114%;margin:0 5em"><a href="/wiki/%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Треугольник">Треугольник</a></div></th></tr><tr><th class="navbox-group" scope="row" style="width:1px">Виды треугольников</th><td class="navbox-list navbox-odd hlist hlist-items-nowrap" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Прямоугольный треугольник">Прямоугольный</a></li>
+<li><a href="/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%B1%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Равнобедренный треугольник">Равнобедренный</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Правильный треугольник">Равносторонний</a></li>
+<li><a href="/wiki/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D0%B1%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Равнобедренный прямоугольный треугольник">Равнобедренный прямоугольный</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Замечательные линии<br/>в треугольнике</th><td class="navbox-list navbox-even hlist hlist-items-nowrap" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a class="mw-selflink selflink">Медиана</a></li>
+<li><a href="/wiki/%D0%92%D1%8B%D1%81%D0%BE%D1%82%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Высота треугольника">Высота</a></li>
+<li><a href="/wiki/%D0%91%D0%B8%D1%81%D1%81%D0%B5%D0%BA%D1%82%D1%80%D0%B8%D1%81%D0%B0" title="Биссектриса">Биссектриса</a></li>
+<li><a href="/wiki/%D0%A1%D0%B5%D1%80%D0%B5%D0%B4%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B5%D1%80%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%BA%D1%83%D0%BB%D1%8F%D1%80" title="Серединный перпендикуляр">Серединный перпендикуляр</a></li>
+<li><a href="/wiki/%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F" title="Средняя линия">Средняя линия</a></li>
+<li><a href="/wiki/%D0%92%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%B8_%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%84%D0%B8%D0%B3%D1%83%D1%80%D1%8B_%D0%B4%D0%BB%D1%8F_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Вписанные и описанные фигуры для треугольника">Описанная и вписанная окружности</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%B0%D1%8F_%D0%A1%D0%B8%D0%BC%D1%81%D0%BE%D0%BD%D0%B0" title="Прямая Симсона">Прямая Симсона</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%B0%D1%8F_%D0%AD%D0%B9%D0%BB%D0%B5%D1%80%D0%B0" title="Прямая Эйлера">Прямая Эйлера</a></li>
+<li><a href="/wiki/%D0%A1%D0%B8%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0" title="Симедиана">Симедиана</a></li>
+<li><a href="/wiki/%D0%A7%D0%B5%D0%B2%D0%B8%D0%B0%D0%BD%D0%B0" title="Чевиана">Чевиана</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Замечательные точки<br/>треугольника</th><td class="navbox-list navbox-odd hlist hlist-items-nowrap" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9E%D1%80%D1%82%D0%BE%D1%86%D0%B5%D0%BD%D1%82%D1%80" title="Ортоцентр">Ортоцентр</a></li>
+<li><a href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B8%D0%B4_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Центроид треугольника">Центроид</a></li>
+<li><a href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D0%B2%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%BD%D0%BE%D0%B9_%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Центр вписанной окружности">Инцентр</a></li>
+<li><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_%D0%91%D1%80%D0%BE%D0%BA%D0%B0%D1%80%D0%B0" title="Точка Брокара">Точка Брокара</a></li>
+<li><a class="mw-redirect" href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_%D0%92%D0%B5%D0%BA%D1%82%D0%B5%D0%BD%D0%B0" title="Точка Вектена">Точка Вектена</a></li>
+<li><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_%D0%96%D0%B5%D1%80%D0%B3%D0%BE%D0%BD%D0%BD%D0%B0" title="Точка Жергонна">Точка Жергонна</a></li>
+<li><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_%D0%9B%D0%B5%D0%BC%D1%83%D0%B0%D0%BD%D0%B0" title="Точка Лемуана">Точка Лемуана</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9C%D0%B8%D0%BA%D0%B5%D0%BB%D1%8F" title="Теорема Микеля">Точка Микеля</a></li>
+<li><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_%D0%9D%D0%B0%D0%B3%D0%B5%D0%BB%D1%8F" title="Точка Нагеля">Точка Нагеля</a></li>
+<li><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B8_%D0%9D%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD%D0%B0" title="Точки Наполеона">Точки Наполеона</a></li>
+<li><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B8_%D0%A2%D0%BE%D1%80%D1%80%D0%B8%D1%87%D0%B5%D0%BB%D0%BB%D0%B8" title="Точки Торричелли">Точки Торричелли</a></li>
+<li><a href="/wiki/%D0%A2%D0%BE%D1%87%D0%BA%D0%B0_%D0%A4%D0%B5%D1%80%D0%BC%D0%B0" title="Точка Ферма">Точка Ферма</a></li>
+<li><a href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D0%B4%D0%B5%D0%B2%D1%8F%D1%82%D0%B8_%D1%82%D0%BE%D1%87%D0%B5%D0%BA" title="Центр окружности девяти точек">Центр окружности девяти точек</a></li>
+<li><a href="/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D0%A8%D0%BF%D0%B8%D0%BA%D0%B5%D1%80%D0%B0" title="Центр Шпикера">Центр Шпикера</a></li>
+<li><a href="/wiki/%D0%AD%D0%BD%D1%86%D0%B8%D0%BA%D0%BB%D0%BE%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F_%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Энциклопедия центров треугольника">Энциклопедия центров треугольника</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Основные теоремы</th><td class="navbox-list navbox-even hlist hlist-items-nowrap" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9D%D0%B5%D1%80%D0%B0%D0%B2%D0%B5%D0%BD%D1%81%D1%82%D0%B2%D0%BE_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Неравенство треугольника">Неравенство треугольника</a></li>
+<li><a href="/wiki/%D0%9F%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%B8_%D0%BF%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D1%8F_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2" title="Признаки подобия треугольников">Признаки подобия треугольников</a></li>
+<li><a href="/wiki/%D0%A0%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2" title="Решение треугольников">Решение треугольников</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D0%B5%D0%BC_%D1%83%D0%B3%D0%BB%D0%B5_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Теорема о внешнем угле треугольника">Теорема о внешнем угле треугольника</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D1%81%D1%83%D0%BC%D0%BC%D0%B5_%D1%83%D0%B3%D0%BB%D0%BE%D0%B2_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Теорема о сумме углов треугольника">Теорема о сумме углов треугольника</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9F%D0%B8%D1%84%D0%B0%D0%B3%D0%BE%D1%80%D0%B0" title="Теорема Пифагора">Теорема Пифагора</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BA%D0%BE%D1%81%D0%B8%D0%BD%D1%83%D1%81%D0%BE%D0%B2" title="Теорема косинусов">Теорема косинусов</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D1%81%D0%B8%D0%BD%D1%83%D1%81%D0%BE%D0%B2" title="Теорема синусов">Теорема синусов</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BE_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%D1%85" title="Теорема о проекциях">Теорема о проекциях</a></li>
+<li><a href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0_%D0%93%D0%B5%D1%80%D0%BE%D0%BD%D0%B0" title="Формула Герона">Формула Герона</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Дополнительные теоремы</th><td class="navbox-list navbox-odd hlist hlist-items-nowrap" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%92%D0%B0%D0%BD-%D0%9E%D0%B1%D0%B5%D0%BB%D1%8F_%D0%BE_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B5" title="Теорема Ван-Обеля о треугольнике">Теорема Ван-Обеля</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%9C%D0%B5%D0%BD%D0%B5%D0%BB%D0%B0%D1%8F" title="Теорема Менелая">Теорема Менелая</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A0%D0%BE%D0%B9%D1%88%D0%BB%D0%B5" title="Теорема Ройшле">Теорема Ройшле (Теркема)</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A1%D1%82%D1%8E%D0%B0%D1%80%D1%82%D0%B0" title="Теорема Стюарта">Теорема Стюарта</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D1%82%D0%B0%D0%BD%D0%B3%D0%B5%D0%BD%D1%81%D0%BE%D0%B2" title="Теорема тангенсов">Теорема тангенсов</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%BA%D0%BE%D1%82%D0%B0%D0%BD%D0%B3%D0%B5%D0%BD%D1%81%D0%BE%D0%B2" title="Теорема котангенсов">Теорема котангенсов</a></li>
+<li><a href="/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%A7%D0%B5%D0%B2%D1%8B" title="Теорема Чевы">Теорема Чевы</a></li>
+<li><a href="/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D1%8B_%D0%9C%D0%BE%D0%BB%D1%8C%D0%B2%D0%B5%D0%B9%D0%B4%D0%B5" title="Формулы Мольвейде">Формулы Мольвейде</a></li></ul>
+</div></td></tr><tr><th class="navbox-group" scope="row" style="width:1px">Обобщения</th><td class="navbox-list navbox-even hlist hlist-items-nowrap" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%A1%D1%84%D0%B5%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Сферический треугольник">Сферический треугольник</a></li>
+<li><a href="/wiki/%D0%93%D0%B8%D0%BF%D0%B5%D1%80%D0%B1%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" title="Гиперболический треугольник">Гиперболический треугольник</a></li>
+<li><a href="/wiki/%D0%A1%D0%B8%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81" title="Симплекс">Симплекс</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐77fc96d76f‐l7lq4
+Cached time: 20250304174850
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.108 seconds
+Real time usage: 0.253 seconds
+Preprocessor visited node count: 625/1000000
+Post‐expand include size: 19434/2097152 bytes
+Template argument size: 518/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3536/5000000 bytes
+Lua time usage: 0.010/10.000 seconds
+Lua memory usage: 969180/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   76.398      1 -total
+ 35.36%   27.016      1 Шаблон:Значения
+ 31.06%   23.726      1 Шаблон:Другое_значение
+ 20.76%   15.859      1 Шаблон:Примечания
+ 19.78%   15.115      1 Шаблон:Wiktionary
+ 15.84%   12.104      1 Шаблон:Треугольник
+ 14.99%   11.449      1 Шаблон:Родственный_проект
+ 12.90%    9.854      1 Шаблон:Навигационная_таблица
+  9.92%    7.575      1 Шаблон:Недоступная_ссылка
+  5.58%    4.266      1 Шаблон:Str_find
+-->
+<!-- Saved in parser cache with key ruwiki:pcache:167970:|#|:idhash:canonical and timestamp 20250304174850 and revision id 141400102. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img alt="" height="1" src="https://login.wikimedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=0" style="border: none; position: absolute;" width="1"/></noscript>
+<div class="printfooter" data-nosnippet="">Источник — <a dir="ltr" href="https://ru.wikipedia.org/w/index.php?title=Медиана_треугольника&amp;oldid=141400102">https://ru.wikipedia.org/w/index.php?title=Медиана_треугольника&amp;oldid=141400102</a></div></div>
+<div class="catlinks" data-mw="interface" id="catlinks"><div class="mw-normal-catlinks" id="mw-normal-catlinks"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8" title="Служебная:Категории">Категории</a>: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F_%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B8" title="Категория:История математики">История математики</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Категория:Геометрия треугольника">Геометрия треугольника</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F" title="Категория:Классическая геометрия">Классическая геометрия</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9F%D0%BB%D0%B0%D0%BD%D0%B8%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F" title="Категория:Планиметрия">Планиметрия</a></li></ul></div><div class="mw-hidden-catlinks mw-hidden-cats-hidden" id="mw-hidden-catlinks">Скрытые категории: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D1%81_%D0%BD%D0%B5%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%BC%D0%B8_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%D0%BC%D0%B8" title="Категория:Википедия:Статьи с нерабочими ссылками">Википедия:Статьи с нерабочими ссылками</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D1%81%D0%BE_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%D0%BC%D0%B8_%D0%BD%D0%B0_%D0%92%D0%B8%D0%BA%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8C" title="Категория:Статьи со ссылками на Викисловарь">Статьи со ссылками на Викисловарь</a></li></ul></div></div>
+</div>
+</div>
+<div id="mw-navigation">
+<h2>Навигация</h2>
+<div id="mw-head">
+<nav aria-labelledby="p-personal-label" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" id="p-personal">
+<h3 class="vector-menu-heading" id="p-personal-label">
+<span class="vector-menu-heading-label">Персональные инструменты</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="pt-anonuserpage"><span title="Страница участника для моего IP">Вы не представились системе</span></li><li class="mw-list-item" id="pt-anontalk"><a accesskey="n" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D1%91_%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" title="Страница обсуждений для моего IP [n]"><span>Обсуждение</span></a></li><li class="mw-list-item" id="pt-anoncontribs"><a accesskey="y" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4" title="Список правок, сделанных с этого IP-адреса [y]"><span>Вклад</span></a></li><li class="mw-list-item" id="pt-createaccount"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&amp;returnto=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0+%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно."><span>Создать учётную запись</span></a></li><li class="mw-list-item" id="pt-login"><a accesskey="o" href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&amp;returnto=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0+%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]"><span>Войти</span></a></li>
+</ul>
+</div>
+</nav>
+<div id="left-navigation">
+<nav aria-labelledby="p-namespaces-label" class="mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy vector-menu" id="p-namespaces">
+<h3 class="vector-menu-heading" id="p-namespaces-label">
+<span class="vector-menu-heading-label">Пространства имён</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="selected mw-list-item" id="ca-nstab-main"><a accesskey="c" href="/wiki/%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Просмотреть контентную страницу [c]"><span>Статья</span></a></li><li class="mw-list-item" id="ca-talk"><a accesskey="t" href="/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" rel="discussion" title="Обсуждение основной страницы [t]"><span>Обсуждение</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-variants-label" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown vector-menu" id="p-variants">
+<input aria-haspopup="true" aria-labelledby="p-variants-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-variants" id="p-variants-checkbox" role="button" type="checkbox"/>
+<label class="vector-menu-heading" id="p-variants-label">
+<span class="vector-menu-heading-label">русский</span>
+</label>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+</ul>
+</div>
+</nav>
+</div>
+<div id="right-navigation">
+<nav aria-labelledby="p-views-label" class="mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy vector-menu" id="p-views">
+<h3 class="vector-menu-heading" id="p-views-label">
+<span class="vector-menu-heading-label">Просмотры</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="ca-view"><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;stable=1"><span>Читать</span></a></li><li class="collapsible selected mw-list-item" id="ca-current"><a accesskey="v" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;stable=0&amp;redirect=no" title="Показать текущую версию этой страницы [v]"><span>Текущая версия</span></a></li><li class="mw-list-item" id="ca-ve-edit"><a accesskey="v" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;veaction=edit" title="Редактировать данную страницу [v]"><span>Править</span></a></li><li class="collapsible mw-list-item" id="ca-edit"><a accesskey="e" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=edit" title="Править исходный текст этой страницы [e]"><span>Править код</span></a></li><li class="mw-list-item" id="ca-history"><a accesskey="h" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=history" title="Журнал изменений страницы [h]"><span>История</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-cactions-label" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown vector-menu" id="p-cactions" title="Больше возможностей">
+<input aria-haspopup="true" aria-labelledby="p-cactions-label" class="vector-menu-checkbox" data-event-name="ui.dropdown-p-cactions" id="p-cactions-checkbox" role="button" type="checkbox"/>
+<label class="vector-menu-heading" id="p-cactions-label">
+<span class="vector-menu-heading-label">Ещё</span>
+</label>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+</ul>
+</div>
+</nav>
+<div class="vector-search-box-vue vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box" id="p-search" role="search">
+<h3>Поиск</h3>
+<form action="/w/index.php" class="vector-search-box-form" id="searchform">
+<div class="vector-search-box-inner" data-search-loc="header-navigation" id="simpleSearch">
+<input accesskey="f" aria-label="Искать в Википедии" autocapitalize="sentences" class="vector-search-box-input" id="searchInput" name="search" placeholder="Искать в Википедии" title="Искать в Википедии [f]" type="search"/>
+<input name="title" type="hidden" value="Служебная:Поиск"/>
+<input class="searchButton mw-fallbackSearchButton" id="mw-searchButton" name="fulltext" title="Найти страницы, содержащие указанный текст" type="submit" value="Найти"/>
+<input class="searchButton" id="searchButton" name="go" title="Перейти к странице, имеющей в точности такое название" type="submit" value="Перейти"/>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="vector-legacy-sidebar" id="mw-panel">
+<div id="p-logo" role="banner">
+<a class="mw-wiki-logo" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу"></a>
+</div>
+<nav aria-labelledby="p-navigation-label" class="mw-portlet mw-portlet-navigation vector-menu-portal portal vector-menu" id="p-navigation">
+<h3 class="vector-menu-heading" id="p-navigation-label">
+<span class="vector-menu-heading-label">Навигация</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="n-mainpage-description"><a accesskey="z" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [z]"><span>Заглавная страница</span></a></li><li class="mw-list-item" id="n-content"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5"><span>Содержание</span></a></li><li class="mw-list-item" id="n-featured"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Статьи, считающиеся лучшими статьями проекта"><span>Избранные статьи</span></a></li><li class="mw-list-item" id="n-randompage"><a accesskey="x" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Посмотреть случайно выбранную страницу [x]"><span>Случайная статья</span></a></li><li class="mw-list-item" id="n-currentevents"><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Статьи о текущих событиях в мире"><span>Текущие события</span></a></li><li class="mw-list-item" id="n-sitesupport"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=ru.wikipedia.org&amp;uselang=ru" title="Поддержите нас"><span>Пожертвовать</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-participation-label" class="mw-portlet mw-portlet-participation vector-menu-portal portal vector-menu" id="p-participation">
+<h3 class="vector-menu-heading" id="p-participation-label">
+<span class="vector-menu-heading-label">Участие</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="n-bug_in_article"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85" title="Сообщить об ошибке в этой статье"><span>Сообщить об ошибке</span></a></li><li class="mw-list-item" id="n-introduction"><a href="/wiki/%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5"><span>Как править статьи</span></a></li><li class="mw-list-item" id="n-portal"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="О проекте, о том, чем здесь можно заниматься, а также — где что находится"><span>Сообщество</span></a></li><li class="mw-list-item" id="n-forum"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC" title="Форум участников Википедии"><span>Форум</span></a></li><li class="mw-list-item" id="n-help"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Место расположения Справки"><span>Справка</span></a></li><li class="mw-list-item" id="n-recentchanges"><a accesskey="r" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8" title="Список последних изменений [r]"><span>Свежие правки</span></a></li><li class="mw-list-item" id="n-newpages"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список недавно созданных страниц"><span>Новые страницы</span></a></li><li class="mw-list-item" id="n-specialpages"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B"><span>Служебные страницы</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-tb-label" class="mw-portlet mw-portlet-tb vector-menu-portal portal vector-menu" id="p-tb">
+<h3 class="vector-menu-heading" id="p-tb-label">
+<span class="vector-menu-heading-label">Инструменты</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="t-whatlinkshere"><a accesskey="j" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D1%81%D1%8E%D0%B4%D0%B0/%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" title="Список всех страниц, ссылающихся на данную [j]"><span>Ссылки сюда</span></a></li><li class="mw-list-item" id="t-recentchangeslinked"><a accesskey="k" href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8/%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0" rel="nofollow" title="Последние изменения в страницах, на которые ссылается эта страница [k]"><span>Связанные правки</span></a></li><li class="mw-list-item" id="t-permalink"><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;oldid=141400102" title="Постоянная ссылка на эту версию страницы"><span>Постоянная ссылка</span></a></li><li class="mw-list-item" id="t-info"><a href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=info" title="Подробнее об этой странице"><span>Сведения о странице</span></a></li><li class="mw-list-item" id="t-cite"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A6%D0%B8%D1%82%D0%B0%D1%82%D0%B0&amp;page=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;id=141400102&amp;wpFormIdentifier=titleform" title="Информация о том, как цитировать эту страницу"><span>Цитировать страницу</span></a></li><li class="mw-list-item" id="t-urlshortener"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:UrlShortener&amp;url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%259C%25D0%25B5%25D0%25B4%25D0%25B8%25D0%25B0%25D0%25BD%25D0%25B0_%25D1%2582%25D1%2580%25D0%25B5%25D1%2583%25D0%25B3%25D0%25BE%25D0%25BB%25D1%258C%25D0%25BD%25D0%25B8%25D0%25BA%25D0%25B0"><span>Получить короткий URL</span></a></li><li class="mw-list-item" id="t-urlshortener-qrcode"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:QrCode&amp;url=https%3A%2F%2Fru.wikipedia.org%2Fwiki%2F%25D0%259C%25D0%25B5%25D0%25B4%25D0%25B8%25D0%25B0%25D0%25BD%25D0%25B0_%25D1%2582%25D1%2580%25D0%25B5%25D1%2583%25D0%25B3%25D0%25BE%25D0%25BB%25D1%258C%25D0%25BD%25D0%25B8%25D0%25BA%25D0%25B0"><span>Скачать QR-код</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-coll-print_export-label" class="mw-portlet mw-portlet-coll-print_export vector-menu-portal portal vector-menu" id="p-coll-print_export">
+<h3 class="vector-menu-heading" id="p-coll-print_export-label">
+<span class="vector-menu-heading-label">Печать/экспорт</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="mw-list-item" id="coll-download-as-rl"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:DownloadAsPdf&amp;page=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;action=show-download-screen" title="Скачать эту страницу как файл PDF"><span>Скачать как PDF</span></a></li><li class="mw-list-item" id="t-print"><a accesskey="p" href="/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;printable=yes" title="Версия этой страницы для печати [p]"><span>Версия для печати</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-wikibase-otherprojects-label" class="mw-portlet mw-portlet-wikibase-otherprojects vector-menu-portal portal vector-menu" id="p-wikibase-otherprojects">
+<h3 class="vector-menu-heading" id="p-wikibase-otherprojects-label">
+<span class="vector-menu-heading-label">В других проектах</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="wb-otherproject-link wb-otherproject-commons mw-list-item"><a href="https://commons.wikimedia.org/wiki/Category:Median_(geometry)" hreflang="en"><span>Викисклад</span></a></li><li class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item" id="t-wikibase"><a accesskey="g" href="https://www.wikidata.org/wiki/Special:EntityPage/Q235001" title="Ссылка на связанный элемент репозитория данных [g]"><span>Элемент Викиданных</span></a></li>
+</ul>
+</div>
+</nav>
+<nav aria-labelledby="p-lang-label" class="mw-portlet mw-portlet-lang vector-menu-portal portal vector-menu" id="p-lang">
+<h3 class="vector-menu-heading" id="p-lang-label">
+<span class="vector-menu-heading-label">На других языках</span>
+</h3>
+<div class="vector-menu-content">
+<ul class="vector-menu-content-list">
+<li class="interlanguage-link interwiki-ar mw-list-item"><a class="interlanguage-link-target" data-language-autonym="العربية" data-language-local-name="арабский" data-title="متوسط (هندسة رياضية)" href="https://ar.wikipedia.org/wiki/%D9%85%D8%AA%D9%88%D8%B3%D8%B7_(%D9%87%D9%86%D8%AF%D8%B3%D8%A9_%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9)" hreflang="ar" lang="ar" title="متوسط (هندسة رياضية) — арабский"><span>العربية</span></a></li><li class="interlanguage-link interwiki-ast mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Asturianu" data-language-local-name="астурийский" data-title="Mediana (xeometría)" href="https://ast.wikipedia.org/wiki/Mediana_(xeometr%C3%ADa)" hreflang="ast" lang="ast" title="Mediana (xeometría) — астурийский"><span>Asturianu</span></a></li><li class="interlanguage-link interwiki-be mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Беларуская" data-language-local-name="белорусский" data-title="Медыяна трохвугольніка" href="https://be.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D1%8B%D1%8F%D0%BD%D0%B0_%D1%82%D1%80%D0%BE%D1%85%D0%B2%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%96%D0%BA%D0%B0" hreflang="be" lang="be" title="Медыяна трохвугольніка — белорусский"><span>Беларуская</span></a></li><li class="interlanguage-link interwiki-bg mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Български" data-language-local-name="болгарский" data-title="Медиана" href="https://bg.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0" hreflang="bg" lang="bg" title="Медиана — болгарский"><span>Български</span></a></li><li class="interlanguage-link interwiki-bn mw-list-item"><a class="interlanguage-link-target" data-language-autonym="বাংলা" data-language-local-name="бенгальский" data-title="মধ্যমা" href="https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A6%A7%E0%A7%8D%E0%A6%AF%E0%A6%AE%E0%A6%BE" hreflang="bn" lang="bn" title="মধ্যমা — бенгальский"><span>বাংলা</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Català" data-language-local-name="каталанский" data-title="Mitjana (geometria)" href="https://ca.wikipedia.org/wiki/Mitjana_(geometria)" hreflang="ca" lang="ca" title="Mitjana (geometria) — каталанский"><span>Català</span></a></li><li class="interlanguage-link interwiki-ckb mw-list-item"><a class="interlanguage-link-target" data-language-autonym="کوردی" data-language-local-name="центральнокурдский" data-title="ناوەڕاستە (ئەندازە)" href="https://ckb.wikipedia.org/wiki/%D9%86%D8%A7%D9%88%DB%95%DA%95%D8%A7%D8%B3%D8%AA%DB%95_(%D8%A6%DB%95%D9%86%D8%AF%D8%A7%D8%B2%DB%95)" hreflang="ckb" lang="ckb" title="ناوەڕاستە (ئەندازە) — центральнокурдский"><span>کوردی</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Čeština" data-language-local-name="чешский" data-title="Těžnice" href="https://cs.wikipedia.org/wiki/T%C4%9B%C5%BEnice" hreflang="cs" lang="cs" title="Těžnice — чешский"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-cv mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Чӑвашла" data-language-local-name="чувашский" data-title="Виçкĕтеслĕх медиани" href="https://cv.wikipedia.org/wiki/%D0%92%D0%B8%C3%A7%D0%BA%C4%95%D1%82%D0%B5%D1%81%D0%BB%C4%95%D1%85_%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B8" hreflang="cv" lang="cv" title="Виçкĕтеслĕх медиани — чувашский"><span>Чӑвашла</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Deutsch" data-language-local-name="немецкий" data-title="Seitenhalbierende" href="https://de.wikipedia.org/wiki/Seitenhalbierende" hreflang="de" lang="de" title="Seitenhalbierende — немецкий"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Ελληνικά" data-language-local-name="греческий" data-title="Διάμεσος τριγώνου" href="https://el.wikipedia.org/wiki/%CE%94%CE%B9%CE%AC%CE%BC%CE%B5%CF%83%CE%BF%CF%82_%CF%84%CF%81%CE%B9%CE%B3%CF%8E%CE%BD%CE%BF%CF%85" hreflang="el" lang="el" title="Διάμεσος τριγώνου — греческий"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a class="interlanguage-link-target" data-language-autonym="English" data-language-local-name="английский" data-title="Median (geometry)" href="https://en.wikipedia.org/wiki/Median_(geometry)" hreflang="en" lang="en" title="Median (geometry) — английский"><span>English</span></a></li><li class="interlanguage-link interwiki-eo mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Esperanto" data-language-local-name="эсперанто" data-title="Mediano (geometrio)" href="https://eo.wikipedia.org/wiki/Mediano_(geometrio)" hreflang="eo" lang="eo" title="Mediano (geometrio) — эсперанто"><span>Esperanto</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Español" data-language-local-name="испанский" data-title="Mediana (geometría)" href="https://es.wikipedia.org/wiki/Mediana_(geometr%C3%ADa)" hreflang="es" lang="es" title="Mediana (geometría) — испанский"><span>Español</span></a></li><li class="interlanguage-link interwiki-et mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Eesti" data-language-local-name="эстонский" data-title="Mediaan (geomeetria)" href="https://et.wikipedia.org/wiki/Mediaan_(geomeetria)" hreflang="et" lang="et" title="Mediaan (geomeetria) — эстонский"><span>Eesti</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Euskara" data-language-local-name="баскский" data-title="Erdibideko" href="https://eu.wikipedia.org/wiki/Erdibideko" hreflang="eu" lang="eu" title="Erdibideko — баскский"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a class="interlanguage-link-target" data-language-autonym="فارسی" data-language-local-name="персидский" data-title="میانه مثلث" href="https://fa.wikipedia.org/wiki/%D9%85%DB%8C%D8%A7%D9%86%D9%87_%D9%85%D8%AB%D9%84%D8%AB" hreflang="fa" lang="fa" title="میانه مثلث — персидский"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fi mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Suomi" data-language-local-name="финский" data-title="Keskijana" href="https://fi.wikipedia.org/wiki/Keskijana" hreflang="fi" lang="fi" title="Keskijana — финский"><span>Suomi</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Français" data-language-local-name="французский" data-title="Médiane (géométrie)" href="https://fr.wikipedia.org/wiki/M%C3%A9diane_(g%C3%A9om%C3%A9trie)" hreflang="fr" lang="fr" title="Médiane (géométrie) — французский"><span>Français</span></a></li><li class="interlanguage-link interwiki-gl mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Galego" data-language-local-name="галисийский" data-title="Mediana (xeometría)" href="https://gl.wikipedia.org/wiki/Mediana_(xeometr%C3%ADa)" hreflang="gl" lang="gl" title="Mediana (xeometría) — галисийский"><span>Galego</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a class="interlanguage-link-target" data-language-autonym="עברית" data-language-local-name="иврит" data-title="תיכון (גאומטריה)" href="https://he.wikipedia.org/wiki/%D7%AA%D7%99%D7%9B%D7%95%D7%9F_(%D7%92%D7%90%D7%95%D7%9E%D7%98%D7%A8%D7%99%D7%94)" hreflang="he" lang="he" title="תיכון (גאומטריה) — иврит"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hi mw-list-item"><a class="interlanguage-link-target" data-language-autonym="हिन्दी" data-language-local-name="хинди" data-title="मध्यिका (भूमिति)" href="https://hi.wikipedia.org/wiki/%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A4%BF%E0%A4%95%E0%A4%BE_(%E0%A4%AD%E0%A5%82%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A4%BF)" hreflang="hi" lang="hi" title="मध्यिका (भूमिति) — хинди"><span>हिन्दी</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Magyar" data-language-local-name="венгерский" data-title="Súlyvonal" href="https://hu.wikipedia.org/wiki/S%C3%BAlyvonal" hreflang="hu" lang="hu" title="Súlyvonal — венгерский"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-hy mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Հայերեն" data-language-local-name="армянский" data-title="Եռանկյան միջնագիծ" href="https://hy.wikipedia.org/wiki/%D4%B5%D5%BC%D5%A1%D5%B6%D5%AF%D5%B5%D5%A1%D5%B6_%D5%B4%D5%AB%D5%BB%D5%B6%D5%A1%D5%A3%D5%AB%D5%AE" hreflang="hy" lang="hy" title="Եռանկյան միջնագիծ — армянский"><span>Հայերեն</span></a></li><li class="interlanguage-link interwiki-id mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Bahasa Indonesia" data-language-local-name="индонезийский" data-title="Garis berat (geometri)" href="https://id.wikipedia.org/wiki/Garis_berat_(geometri)" hreflang="id" lang="id" title="Garis berat (geometri) — индонезийский"><span>Bahasa Indonesia</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Italiano" data-language-local-name="итальянский" data-title="Mediana (geometria)" href="https://it.wikipedia.org/wiki/Mediana_(geometria)" hreflang="it" lang="it" title="Mediana (geometria) — итальянский"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a class="interlanguage-link-target" data-language-autonym="日本語" data-language-local-name="японский" data-title="中線" href="https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%B7%9A" hreflang="ja" lang="ja" title="中線 — японский"><span>日本語</span></a></li><li class="interlanguage-link interwiki-kk mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Қазақша" data-language-local-name="казахский" data-title="Үшбұрыш медианасы" href="https://kk.wikipedia.org/wiki/%D2%AE%D1%88%D0%B1%D2%B1%D1%80%D1%8B%D1%88_%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0%D1%81%D1%8B" hreflang="kk" lang="kk" title="Үшбұрыш медианасы — казахский"><span>Қазақша</span></a></li><li class="interlanguage-link interwiki-km mw-list-item"><a class="interlanguage-link-target" data-language-autonym="ភាសាខ្មែរ" data-language-local-name="кхмерский" data-title="មេដ្យាន" href="https://km.wikipedia.org/wiki/%E1%9E%98%E1%9F%81%E1%9E%8A%E1%9F%92%E1%9E%99%E1%9E%B6%E1%9E%93" hreflang="km" lang="km" title="មេដ្យាន — кхмерский"><span>ភាសាខ្មែរ</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a class="interlanguage-link-target" data-language-autonym="한국어" data-language-local-name="корейский" data-title="중선" href="https://ko.wikipedia.org/wiki/%EC%A4%91%EC%84%A0" hreflang="ko" lang="ko" title="중선 — корейский"><span>한국어</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Lietuvių" data-language-local-name="литовский" data-title="Pusiaukraštinė" href="https://lt.wikipedia.org/wiki/Pusiaukra%C5%A1tin%C4%97" hreflang="lt" lang="lt" title="Pusiaukraštinė — литовский"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-lv mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Latviešu" data-language-local-name="латышский" data-title="Mediāna (ģeometrija)" href="https://lv.wikipedia.org/wiki/Medi%C4%81na_(%C4%A3eometrija)" hreflang="lv" lang="lv" title="Mediāna (ģeometrija) — латышский"><span>Latviešu</span></a></li><li class="interlanguage-link interwiki-mk mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Македонски" data-language-local-name="македонский" data-title="Тежишна линија" href="https://mk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B6%D0%B8%D1%88%D0%BD%D0%B0_%D0%BB%D0%B8%D0%BD%D0%B8%D1%98%D0%B0" hreflang="mk" lang="mk" title="Тежишна линија — македонский"><span>Македонски</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Nederlands" data-language-local-name="нидерландский" data-title="Zwaartelijn" href="https://nl.wikipedia.org/wiki/Zwaartelijn" hreflang="nl" lang="nl" title="Zwaartelijn — нидерландский"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Polski" data-language-local-name="польский" data-title="Środkowa trójkąta" href="https://pl.wikipedia.org/wiki/%C5%9Arodkowa_tr%C3%B3jk%C4%85ta" hreflang="pl" lang="pl" title="Środkowa trójkąta — польский"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Português" data-language-local-name="португальский" data-title="Mediana (geometria)" href="https://pt.wikipedia.org/wiki/Mediana_(geometria)" hreflang="pt" lang="pt" title="Mediana (geometria) — португальский"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Română" data-language-local-name="румынский" data-title="Mediană" href="https://ro.wikipedia.org/wiki/Median%C4%83" hreflang="ro" lang="ro" title="Mediană — румынский"><span>Română</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Slovenščina" data-language-local-name="словенский" data-title="Mediana (geometrija)" href="https://sl.wikipedia.org/wiki/Mediana_(geometrija)" hreflang="sl" lang="sl" title="Mediana (geometrija) — словенский"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Српски / srpski" data-language-local-name="сербский" data-title="Тежишна дуж" href="https://sr.wikipedia.org/wiki/%D0%A2%D0%B5%D0%B6%D0%B8%D1%88%D0%BD%D0%B0_%D0%B4%D1%83%D0%B6" hreflang="sr" lang="sr" title="Тежишна дуж — сербский"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-sv mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Svenska" data-language-local-name="шведский" data-title="Median (geometri)" href="https://sv.wikipedia.org/wiki/Median_(geometri)" hreflang="sv" lang="sv" title="Median (geometri) — шведский"><span>Svenska</span></a></li><li class="interlanguage-link interwiki-ta mw-list-item"><a class="interlanguage-link-target" data-language-autonym="தமிழ்" data-language-local-name="тамильский" data-title="நடுக்கோடு (வடிவவியல்)" href="https://ta.wikipedia.org/wiki/%E0%AE%A8%E0%AE%9F%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AF%8B%E0%AE%9F%E0%AF%81_(%E0%AE%B5%E0%AE%9F%E0%AE%BF%E0%AE%B5%E0%AE%B5%E0%AE%BF%E0%AE%AF%E0%AE%B2%E0%AF%8D)" hreflang="ta" lang="ta" title="நடுக்கோடு (வடிவவியல்) — тамильский"><span>தமிழ்</span></a></li><li class="interlanguage-link interwiki-th mw-list-item"><a class="interlanguage-link-target" data-language-autonym="ไทย" data-language-local-name="тайский" data-title="เส้นมัธยฐาน" href="https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%98%E0%B8%A2%E0%B8%90%E0%B8%B2%E0%B8%99" hreflang="th" lang="th" title="เส้นมัธยฐาน — тайский"><span>ไทย</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Türkçe" data-language-local-name="турецкий" data-title="Kenarortay" href="https://tr.wikipedia.org/wiki/Kenarortay" hreflang="tr" lang="tr" title="Kenarortay — турецкий"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Українська" data-language-local-name="украинский" data-title="Медіана трикутника" href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B4%D1%96%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B8%D0%BA%D1%83%D1%82%D0%BD%D0%B8%D0%BA%D0%B0" hreflang="uk" lang="uk" title="Медіана трикутника — украинский"><span>Українська</span></a></li><li class="interlanguage-link interwiki-uz mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Oʻzbekcha / ўзбекча" data-language-local-name="узбекский" data-title="Mediana" href="https://uz.wikipedia.org/wiki/Mediana" hreflang="uz" lang="uz" title="Mediana — узбекский"><span>Oʻzbekcha / ўзбекча</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a class="interlanguage-link-target" data-language-autonym="Tiếng Việt" data-language-local-name="вьетнамский" data-title="Trung tuyến" href="https://vi.wikipedia.org/wiki/Trung_tuy%E1%BA%BFn" hreflang="vi" lang="vi" title="Trung tuyến — вьетнамский"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a class="interlanguage-link-target" data-language-autonym="中文" data-language-local-name="китайский" data-title="中線" href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E7%B7%9A" hreflang="zh" lang="zh" title="中線 — китайский"><span>中文</span></a></li><li class="interlanguage-link interwiki-zh-min-nan mw-list-item"><a class="interlanguage-link-target" data-language-autonym="閩南語 / Bân-lâm-gú" data-language-local-name="миньнань" data-title="Tiong-soàⁿ (kí-hô-ha̍k)" href="https://zh-min-nan.wikipedia.org/wiki/Tiong-so%C3%A0%E2%81%BF_(k%C3%AD-h%C3%B4-ha%CC%8Dk)" hreflang="nan" lang="nan" title="Tiong-soàⁿ (kí-hô-ha̍k) — миньнань"><span>閩南語 / Bân-lâm-gú</span></a></li>
+</ul>
+<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a class="wbc-editpage" href="https://www.wikidata.org/wiki/Special:EntityPage/Q235001#sitelinks-wikipedia" title="Править ссылки на другие языки">Править ссылки</a></span></div>
+</div>
+</nav>
+</div>
+</div>
+<footer class="mw-footer" id="footer">
+<ul id="footer-info">
+<li id="footer-info-lastmod"> Эта страница в последний раз была отредактирована 11 ноября 2024 в 10:01.</li>
+<li id="footer-info-copyright">Текст доступен по <a class="external text" href="//creativecommons.org/licenses/by-sa/4.0/deed.ru" rel="nofollow">лицензии Creative Commons «С указанием авторства — С сохранением условий» (CC BY-SA)</a>; в отдельных случаях могут действовать дополнительные условия.
+<span class="noprint">Подробнее см. <a class="external text" href="https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/ru">Условия использования</a>.</span><br/>
+Wikipedia® — зарегистрированный товарный знак некоммерческой организации <a class="external text" href="https://wikimediafoundation.org/ru/" rel="nofollow">«Фонд Викимедиа» (Wikimedia Foundation, Inc.)</a></li>
+</ul>
+<ul id="footer-places">
+<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/ru">Политика конфиденциальности</a></li>
+<li id="footer-places-about"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5">Описание Википедии</a></li>
+<li id="footer-places-disclaimers"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8">Отказ от ответственности</a></li>
+<li id="footer-places-contact"><a href="//ru.wikipedia.org/wiki/Википедия:Контакты">Свяжитесь с нами</a></li>
+<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Policy:Universal_Code_of_Conduct/ru">Кодекс поведения</a></li>
+<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Разработчики</a></li>
+<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ru.wikipedia.org">Статистика</a></li>
+<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Заявление о куки</a></li>
+<li id="footer-places-mobileview"><a class="noprint stopMobileRedirectToggle" href="//ru.m.wikipedia.org/w/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D0%B0%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B0&amp;mobileaction=toggle_view_mobile">Мобильная версия</a></li>
+</ul>
+<ul class="noprint" id="footer-icons">
+<li id="footer-copyrightico"><a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://wikimediafoundation.org/"><picture><source height="29" media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84"/><img alt="Wikimedia Foundation" height="25" lang="en" loading="lazy" src="/static/images/footer/wikimedia.svg" width="25"/></picture></a></li>
+<li id="footer-poweredbyico"><a class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled" href="https://www.mediawiki.org/"><picture><source height="31" media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88"/><img alt="Powered by MediaWiki" height="25" lang="en" loading="lazy" src="/w/resources/assets/mediawiki_compact.svg" width="25"/></picture></a></li>
+</ul>
+</footer>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet vector-menu-portal portal" id="p-dock-bottom">
+<ul>
+</ul>
+</div>
+
+
+</body>
+</html>
